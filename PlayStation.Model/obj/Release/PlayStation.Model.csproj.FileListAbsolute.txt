@@ -1,0 +1,17 @@
+D:\Masaustu\PlayStation\PlayStation.Model\bin\Release\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation.Model\bin\Release\PlayStation.Model.pdb
+D:\Masaustu\PlayStation\PlayStation\bin\Release\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation\bin\Release\PlayStation.Model.pdb
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Release\PlayStation.Model.csprojResolveAssemblyReference.cache
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Release\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Release\PlayStation.Model.pdb
+D:\Masaustu\PlayStation_FB\PlayStation_FB\bin\Release\PlayStation.Model.dll
+D:\Masaustu\PlayStation_FB\PlayStation_FB\bin\Release\PlayStation.Model.pdb
+D:\Masaustu\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.csprojResolveAssemblyReference.cache
+D:\Masaustu\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.dll
+D:\Masaustu\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.pdb
+D:\Projects\PlayStation_FB\PlayStation_FB\bin\Release\PlayStation.Model.dll
+D:\Projects\PlayStation_FB\PlayStation_FB\bin\Release\PlayStation.Model.pdb
+D:\Projects\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.csprojResolveAssemblyReference.cache
+D:\Projects\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.dll
+D:\Projects\PlayStation_FB\PlayStation.Model\obj\Release\PlayStation.Model.pdb

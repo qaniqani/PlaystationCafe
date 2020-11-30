@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PlayStation.Licence.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PlayStation_Licence_LicenceService_ConsolePlus" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.nvisionsoft.net/ConsolePlus.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

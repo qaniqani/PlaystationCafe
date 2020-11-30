@@ -1,0 +1,264 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Content.master.cs" Inherits="img_Content" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+	<meta charset="utf-8">
+	<meta name="keywords" content="keyword phrase 1, keyword phrase 2" />
+	<meta name="description" content="Starter is a perfect multi-purpose html template." />
+	
+	<link rel="Shortcut Icon" type="image/ico" href="images/favicon.html" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+	<title>Console Plus | Playstation Cafe Yönetim Programı | Cafe Yönetim</title>
+  
+	<!-- CSS _____________________________________________-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="/css/magnificpopup.css" media="screen" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/style.css" media="screen" />  
+	<link rel="stylesheet" href="/css/scheme-blue.css" media="screen" />
+	
+	<!-- Javascripts ______________________________________-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+	<!-- include Easing -->
+	<script src="/js/jquery.easing.js"></script> 
+	<!-- include Cycle -->
+	<script src="/js/jquery.cycle.all.js"></script> 
+	<!-- include jCarousel -->
+	<script src="/js/jquery.jcarousel.min.js"></script> 
+	<!-- include Masonry -->
+	<script src="/js/jquery.isotope.min.js"></script> 
+	<!-- include filtering mixitup -->
+	<script src="/js/jquery.mixitup.min.js"></script> 
+	<!-- include image popups -->
+	<script src="/js/jquery.magnific-popup.min.js"></script> 
+	<!-- include mobile menu -->
+	<script src="/js/jquery.mobilemenu.js"></script> 
+	<!-- include custom script -->
+	<script src="/js/scripts.js"></script>
+
+	<!-- Fixing Internet Explorer ______________________________________-->
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="/css/ie.css" />
+	<![endif]-->
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="/css/ie7.css" />
+		<link rel="stylesheet" href="/css/font-awesome-ie7.min.css">
+	<![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <header role="banner" id="header">
+
+	<div id="sticks-to-top">
+		<div class="wrapper">
+		
+			<!-- Main menu _____________________________________________-->
+			<nav id="mainmenu" role="navigation">
+				<ul>
+					<li><a href="/" class="active">ANASAYFA</a></li>
+					<li><a href="#">CONSOLE PLUS</a>
+						<ul class="sub-menu">
+							<li><a href="/icerik-detay/console-plus-nedir">CONSOLE PLUS NEDİR</a></li>
+							<li><a href="/icerik-detay/firma-kaydi-ve-download">FİRMA KAYDI ve DOWNLOAD</a></li>
+							<li><a href="/icerik-detay/kurulum-detaylari">KURULUM DETAYLARI</a></li>
+						</ul>
+					</li>
+					<li><a href="/icerik-detay/satin-al">SATIN AL</a></li>
+				</ul>
+			</nav>
+		
+			<!-- Logo _____________________________________________-->
+			<h2 id="logo">
+				<a href="/" rel="home" title=""><img src="/images/logo.png" alt="" /></a>
+			</h2>
+
+			<!-- Address ______________________________________-->
+			<div id="address-block"> 
+				<ul>
+			   		<li><i class="icon-phone"></i>TEL: &nbsp; (216) 398 4499</li> 
+			   		<li><a href="/icerik-detay/iletisim-bilgileri">İLETİŞİM</a></li>
+				</ul>
+			</div>	
+
+		</div> <!-- END .wrapper FOR #sticks-to-top -->
+	</div>
+</header>
+        <!-- END #sticks-to-top -->
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+    </asp:ContentPlaceHolder>
+<!-- END #header -->
+
+    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+    </asp:ContentPlaceHolder>
+
+<a id="back-to-top" href="#" title="Back to top"><i class="icon-angle-up"></i></a>
+
+
+<!-- FOOTER _____________________________________________-->
+<footer id="footer" role="contentinfo">
+	<div class="wrapper">	
+		<div class="widgets">
+			<div class="footerbox">
+				<h3>Daha Fazlası</h3>
+				<p>İşlenmenizi riske atmadan en kolay ve rahat bir biçimde yönetebilmek için daha fazla zaman kaybetmeyin <strong>Console Plus</strong> tam size ve işletmenize göre...</p>
+				<p><a href="/icerik-detay/firma-kaydi-ve-download" class="button">HEMEN İNDİRİN</a></p>
+			</div>
+			<div class="footerbox">
+				<h3>Konular</h3>
+				<ul>
+					<li><a href="/icerik-detay/console-plus-nedir">Console Plus Nedir</a></li>
+					<li><a href="/icerik-detay/satin-al">Satın Al</a></li>
+					<li><a href="/icerik-detay/firma-kaydi-ve-download">Firma Kaydı ve İndirme</a></li>
+					<li><a href="/icerik-detay/kurulum-detaylari">Kurulum Detayları</a></li>
+				</ul>
+			</div>
+			<div class="footerbox">
+				<h3>Diğer Projelerimiz</h3>
+				<ul>
+					<li><a href="http://www.imarbilgileri.com" target="_blank">İmar Durumu Sorgulama</a></li>
+					<li><a href="http://www.arabagani.com" target="_blank">Rent a Car Programı</a></li>
+					<li><a href="http://www.webvilla.web.tr" target="_blank">Web Tasarım ve Yazılım</a></li>
+					<li><a href="http://www.yazilimcinotlari.com" target="_blank">Bilgi Paylaşımı</a></li>
+				</ul>
+			</div>
+			<div class="footerbox last">
+				<h3>İletişim</h3>
+				<p>M. Akif Mh. Fatih Bul. Merkez Sk. No: 4<br/>
+				    Sultanbeyli, İstanbul<br/>
+				    Türkiye</p>
+
+				<ul class="contact-info">
+					<li><i class="icon-phone" title="Phone"></i> +90 (216) 398-4499</li>
+					<li><i class="icon-envelope" title="Email"></i> info@nvisionsoft.net</li>
+					<li><i class="icon-desktop" title="Web"></i>   nvisionsoft.net</li>
+				</ul>
+			</div>
+			<br class="clear" />
+		</div> <!-- END .widgets -->
+		
+		<div class="bottom">
+			<p class="left">Web Site Tasarım ve Yazılım <a href="http://www.nvisionsoft.net">NVision Soft</a></p>
+			<p class="right">&copy; 2014 Nvision Soft. Tüm hakları saklıdır.</p>
+		</div>
+	</div> <!-- END .wrapper FOR footer -->
+</footer>
+<!-- END footer -->
+
+<!-- Custom Homepage Scripts _____________________________________________-->
+<script>
+    jQuery(window).load(function () {
+
+        // init Cycle for slider
+        $('#slides').after('<div id="circle-pager">').cycle({
+            fx: 'fade',
+            speed: 800,
+            timeout: 8000,
+            cleartype: true,
+            cleartypeNoBg: false,
+            pager: '#circle-pager',
+            next: '#slider .next1',
+            prev: '#slider .prev1',
+            slideResize: false,
+            fit: 0,
+            width: '100%',
+            before: function (currSlideElement, nextSlideElement) {
+                // hide elements and put them in start position		
+                $(this).find('.slide-image').css({
+                    'opacity': '0',
+                    'right': '-50px'
+                });
+                $(this).find('.slide-text').css({
+                    'opacity': '0',
+                    'left': '-50px'
+                });
+                $(this).find('.slide-text p').css({
+                    'opacity': '0',
+                    'left': '15px'
+                });
+                $(this).find('.slide-image img').css({
+                    'opacity': '0',
+                    'right': '-100px'
+                });
+            },
+            after: function (currSlideElement, nextSlideElement) {
+                // fade in image
+                $(this).find('.slide-image').animate({
+                    'opacity': '1',
+                    'right': '0'
+                }, 500, 'linear');
+                // bring the text box from top
+                $(this).find('.slide-text').delay(500).animate({
+                    'opacity': '1',
+                    'left': '0'
+                }, 500, 'easeOutBack');
+                // bring the paragraphs in
+                $(this).find('.slide-text p:eq(0)').delay(500).animate({
+                    'opacity': '1',
+                    'left': '0'
+                }, 500, 'easeOutBack');
+                $(this).find('.slide-text p:eq(1)').delay(700).animate({
+                    'opacity': '1',
+                    'left': '0'
+                }, 500, 'easeOutBack');
+                $(this).find('.slide-text p:eq(2)').delay(900).animate({
+                    'opacity': '1',
+                    'left': '0'
+                }, 500, 'easeOutBack');
+                $(this).find('.slide-text p:eq(3)').delay(1100).animate({
+                    'opacity': '1',
+                    'left': '0'
+                }, 500, 'easeOutBack');
+                // bring the front images in
+                $(this).find('.slide-image img:eq(0)').delay(500).animate({
+                    'opacity': '1',
+                    'right': '0'
+                }, 800, 'easeOutBack');
+                $(this).find('.slide-image img:eq(1)').delay(700).animate({
+                    'opacity': '1',
+                    'right': '0'
+                }, 800, 'easeOutBack');
+                $(this).find('.slide-image img:eq(2)').delay(900).animate({
+                    'opacity': '1',
+                    'right': '0'
+                }, 800, 'easeOutBack');
+                $(this).find('.slide-image img:eq(3)').delay(1100).animate({
+                    'opacity': '1',
+                    'right': '0'
+                }, 800, 'easeOutBack');
+
+            }
+        });
+
+
+        // init jCarousel for portfolio pieces
+        $('.sneakpeak-carousel').jcarousel({
+            'wrap': 'both'
+        });
+        $('.sneakpeak-prev').click(function () {
+            $('.sneakpeak-carousel').jcarousel('scroll', '-=1');
+        });
+        $('.sneakpeak-next').click(function () {
+            $('.sneakpeak-carousel').jcarousel('scroll', '+=1');
+        });
+
+    });
+</script>
+
+<!-- Your Google Analytics ______________________________________-->
+        <%
+            InPlusYonetimModel.YonetimEntities db = new InPlusYonetimModel.YonetimEntities();
+            Response.Write(db.AYARs.OrderByDescending(a => a.AYARID).FirstOrDefault().ANALYTICSKODU);
+        %>
+    </form>
+</body>
+</html>

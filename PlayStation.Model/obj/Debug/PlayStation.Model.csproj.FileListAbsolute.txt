@@ -1,0 +1,7 @@
+D:\Masaustu\PlayStation\PlayStation.Model\bin\Debug\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation.Model\bin\Debug\PlayStation.Model.pdb
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Debug\PlayStation.Model.csprojResolveAssemblyReference.cache
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Debug\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation.Model\obj\Debug\PlayStation.Model.pdb
+D:\Masaustu\PlayStation\PlayStation\bin\Debug\PlayStation.Model.dll
+D:\Masaustu\PlayStation\PlayStation\bin\Debug\PlayStation.Model.pdb

@@ -1,0 +1,632 @@
+﻿using DevExpress.XtraGrid.Localization;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraPrinting.Localization;
+
+namespace PlayStation
+{
+    public class DevexpressLocalizers
+    {
+        public class GridLocalizer : DevExpress.XtraGrid.Localization.GridLocalizer
+        {
+            public override string GetLocalizedString(DevExpress.XtraGrid.Localization.GridStringId id)
+            {
+                switch (id)
+                {
+                    case GridStringId.CardViewNewCard: return "Yeni Kart";
+                    case GridStringId.CardViewQuickCustomizationButton: return "Özelleştir";
+                    case GridStringId.CardViewQuickCustomizationButtonFilter: return "Filtrele";
+                    case GridStringId.CardViewQuickCustomizationButtonSort: return "Sırala";
+                    case GridStringId.ColumnViewExceptionMessage: return "Hata";
+                    case GridStringId.CustomFilterDialog2FieldCheck: return "İşaretle";
+                    case GridStringId.CustomFilterDialogCancelButton: return "İptal";
+                    case GridStringId.CustomFilterDialogCaption: return "Özel Filtre";
+                    case GridStringId.CustomFilterDialogClearFilter: return "Filtreyi Temizle";
+                    //case GridStringId.CustomFilterDialogConditionBlanks: return "Boşlar";
+                    //case GridStringId.CustomFilterDialogConditionEQU: return "Eşittir";
+                    //case GridStringId.CustomFilterDialogConditionGT: return "Büyüktür";
+                    //case GridStringId.CustomFilterDialogConditionGTE: return "Büyüktür veya Eşittir";
+                    //case GridStringId.CustomFilterDialogConditionLike: return "Benzeyen";
+                    //case GridStringId.CustomFilterDialogConditionLT: return "Küçüktür";
+                    //case GridStringId.CustomFilterDialogConditionLTE: return "Küçüktür veya Eşittir";
+                    //case GridStringId.CustomFilterDialogConditionNEQ: return "Eşit Değildir";
+                    //case GridStringId.CustomFilterDialogConditionNonBlanks: return "Dolular";
+                    //case GridStringId.CustomFilterDialogConditionNotLike: return "Benzemeyen";
+                    case GridStringId.CustomFilterDialogFormCaption: return "Özel Filtre";
+                    case GridStringId.CustomFilterDialogOkButton: return "Tamam";
+                    case GridStringId.CustomFilterDialogRadioAnd: return "ve";
+                    case GridStringId.CustomFilterDialogRadioOr: return "veya";
+                    case GridStringId.CustomizationBands: return "Bantlar";
+                    case GridStringId.CustomizationCaption: return "Özelleştirme";
+                    case GridStringId.CustomizationColumns: return "Sütunlar";
+                    case GridStringId.CustomizationFormBandHint: return "Gizlemek istediğiniz bantları buraya sürükleyip bırakın.";
+                    case GridStringId.CustomizationFormColumnHint: return "Gizlemek istediğiniz sütunları buraya sürükleyip bırakın.";
+                    case GridStringId.FileIsNotFoundError: return "Dosya bulunamadı!";
+                    case GridStringId.FilterBuilderApplyButton: return "Uygula";
+                    case GridStringId.FilterBuilderCancelButton: return "İptal";
+                    case GridStringId.FilterBuilderCaption: return "Filtre Sihirbazı";
+                    case GridStringId.FilterBuilderOkButton: return "Tamam";
+                    case GridStringId.FilterPanelCustomizeButton: return "Filtre Sihirbazı";
+                    case GridStringId.GridGroupPanelText: return "Gruplamak istediğiniz sütun başlıklarını buraya sürükleyip bırakın";
+                    case GridStringId.GridNewRowText: return "*";
+                    case GridStringId.GridOutlookIntervals: return "Aralıklar";
+                    case GridStringId.GroupSummaryEditorFormCancelButton: return "İptal";
+                    case GridStringId.GroupSummaryEditorFormCaption: return "Grup Özeti Düzenle";
+                    case GridStringId.GroupSummaryEditorFormItemsTabCaption: return "Elemanlar";
+                    case GridStringId.GroupSummaryEditorFormOkButton: return "Tamam";
+                    case GridStringId.GroupSummaryEditorFormOrderTabCaption: return "Sıra";
+                    case GridStringId.GroupSummaryEditorSummaryAverage: return "Ortalama";
+                    case GridStringId.GroupSummaryEditorSummaryCount: return "Adet";
+                    case GridStringId.GroupSummaryEditorSummaryMax: return "Maks";
+                    case GridStringId.GroupSummaryEditorSummaryMin: return "Min";
+                    case GridStringId.GroupSummaryEditorSummarySum: return "Toplam";
+                    case GridStringId.MenuColumnAverageSummaryTypeDescription: return "Sütündaki tüm değerlerin ortalaması";
+                    case GridStringId.MenuColumnBestFit: return "En iyi genişlik";
+                    case GridStringId.MenuColumnBestFitAllColumns: return "En iyi genişlik - Tümü";
+                    case GridStringId.MenuColumnClearFilter: return "Filtreyi Temizle";
+                    case GridStringId.MenuColumnClearSorting: return "Sıralamayı Temizle";
+                    case GridStringId.MenuColumnColumnCustomization: return "Sütun Özelleştirme";
+                    case GridStringId.MenuColumnCountSummaryTypeDescription: return "Sütündaki değerlerin adedi";
+                    case GridStringId.MenuColumnExpressionEditor: return "Filtre ifadesi düzenleyici";
+                    case GridStringId.MenuColumnFilter: return "Filtre";
+                    case GridStringId.MenuColumnFilterEditor: return "Filtre Sihirbazı";
+                    case GridStringId.MenuColumnGroup: return "Sütunu Grupla";
+                    case GridStringId.MenuColumnGroupBox: return "Gruplama Bandı";
+                    case GridStringId.MenuColumnGroupIntervalDay: return "Gün";
+                    case GridStringId.MenuColumnGroupIntervalMenu: return "Menü";
+                    case GridStringId.MenuColumnGroupIntervalMonth: return "Ay";
+                    case GridStringId.MenuColumnGroupIntervalNone: return "YOK";
+                    case GridStringId.MenuColumnGroupIntervalSmart: return "Akıllı";
+                    case GridStringId.MenuColumnGroupIntervalYear: return "Yıl";
+                    case GridStringId.MenuColumnGroupSummaryEditor: return "Özet Düzenleyici";
+                    case GridStringId.MenuColumnGroupSummarySortFormat: return "Sıralama Formatı";
+                    case GridStringId.MenuColumnMaxSummaryTypeDescription: return "Sütündaki tüm değerler içindeki en büyük değer";
+                    case GridStringId.MenuColumnMinSummaryTypeDescription: return "Sütündaki tüm değerler içindeki en küçük değer";
+                    case GridStringId.MenuColumnRemoveColumn: return "Sil";
+                    case GridStringId.MenuColumnResetGroupSummarySort: return "Sıfırla";
+                    case GridStringId.MenuColumnShowColumn: return "Göster";
+                    case GridStringId.MenuColumnSortAscending: return "Sırala - AZ";
+                    case GridStringId.MenuColumnSortDescending: return "Sırala - ZA";
+                    case GridStringId.MenuColumnSortGroupBySummaryMenu: return "Grup Özeti";
+                    case GridStringId.MenuColumnSumSummaryTypeDescription: return "Sütündaki tüm değerlerin toplamı";
+                    case GridStringId.MenuColumnUnGroup: return "Gruptan Çıkar";
+                    case GridStringId.MenuFooterAverage: return "Ortalama";
+                    case GridStringId.MenuFooterAverageFormat: return "Ort:{0}";
+                    case GridStringId.MenuFooterCount: return "Adet";
+                    case GridStringId.MenuFooterCountFormat: return "Ad:{0}";
+                    case GridStringId.MenuFooterCountGroupFormat: return "Ad::{0}";
+                    case GridStringId.MenuFooterCustomFormat: return "Özel:{0}";
+                    case GridStringId.MenuFooterMax: return "Maksimum";
+                    case GridStringId.MenuFooterMaxFormat: return "Maks:{0}";
+                    case GridStringId.MenuFooterMin: return "Minimum";
+                    case GridStringId.MenuFooterMinFormat: return "Min:{0}";
+                    case GridStringId.MenuFooterNone: return "Gizle";
+                    case GridStringId.MenuFooterSum: return "Toplam";
+                    case GridStringId.MenuFooterSumFormat: return "Top:{0}";
+                    case GridStringId.MenuGroupPanelClearGrouping: return "Gruplamayı Temizle";
+                    case GridStringId.MenuGroupPanelFullCollapse: return "Tümünü Topla";
+                    case GridStringId.MenuGroupPanelFullExpand: return "Tümünü Aç";
+                    case GridStringId.MenuGroupPanelHide: return "Gruplama Panelini Gizle";
+                    case GridStringId.MenuGroupPanelShow: return "Gruplama Panelini Göster";
+                    case GridStringId.PopupFilterAll: return "Tümü";
+                    case GridStringId.PopupFilterBlanks: return "Boşlar";
+                    case GridStringId.PopupFilterCustom: return "Özel";
+                    case GridStringId.PopupFilterNonBlanks: return "Dolular";
+                    case GridStringId.PrintDesignerBandedView: return "Bant Görünümü";
+                    case GridStringId.PrintDesignerBandHeader: return "Bant Başlığı";
+                    case GridStringId.PrintDesignerCardView: return "Kart Görünümü";
+                    case GridStringId.PrintDesignerDescription: return "Açıklama";
+                    case GridStringId.PrintDesignerGridView: return "Tablo Görünümü";
+                    case GridStringId.PrintDesignerLayoutView: return "Alan Görünümü";
+                    case GridStringId.WindowErrorCaption: return "Hata";
+                }
+                return base.GetLocalizedString(id);
+            }
+        }
+
+        //public class TreeListLocalizer : DevExpress.XtraTreeList.Localization.TreeListLocalizer
+        //{
+
+        //    public override string GetLocalizedString(DevExpress.XtraTreeList.Localization.TreeListStringId id)
+        //    {
+        //        switch (id)
+        //        {
+        //            case TreeListStringId.CustomizationFormColumnHint: return "Gizlemek istediğiniz sütunları buraya sürükleyip bırakın.";
+        //            case TreeListStringId.MenuColumnBestFit: return "En iyi genişlik";
+        //            case TreeListStringId.MenuColumnBestFitAllColumns: return "En iyi genişlik - Tümü";
+        //            case TreeListStringId.MenuColumnColumnCustomization: return "Sütun Özelleştirme";
+        //            case TreeListStringId.MenuColumnSortAscending: return "Sırala - AZ";
+        //            case TreeListStringId.MenuColumnSortDescending: return "Sırala - ZA";
+        //            case TreeListStringId.MenuFooterAverage: return "Ortalama";
+        //            case TreeListStringId.MenuFooterAverageFormat: return "Ort:{0}";
+        //            case TreeListStringId.MenuFooterCount: return "Adet";
+        //            case TreeListStringId.MenuFooterCountFormat: return "Ad:{0}";
+        //            case TreeListStringId.MenuFooterMax: return "Maksimum";
+        //            case TreeListStringId.MenuFooterMaxFormat: return "Maks:{0}";
+        //            case TreeListStringId.MenuFooterMin: return "Minimum";
+        //            case TreeListStringId.MenuFooterMinFormat: return "Min:{0}";
+        //            case TreeListStringId.MenuFooterNone: return "Gizle";
+        //            case TreeListStringId.MenuFooterSum: return "Toplam";
+        //            case TreeListStringId.MenuFooterSumFormat: return "Top:{0}";
+        //            case TreeListStringId.PrintDesignerDescription: return "Açıklama";
+        //        }
+        //        return base.GetLocalizedString(id);
+        //    }
+
+        //}
+
+        public class BarManagertLocalizer : DevExpress.XtraBars.Localization.BarLocalizer
+        {
+            public override string GetLocalizedString(DevExpress.XtraBars.Localization.BarString id)
+            {
+                switch (id)
+                {
+                    case DevExpress.XtraBars.Localization.BarString.AddOrRemove: return "Ekle veya Kaldır";
+                    case DevExpress.XtraBars.Localization.BarString.BarAllItems: return "Tüm Öğeler";
+                    case DevExpress.XtraBars.Localization.BarString.BarUnassignedItems: return "Atanmamış Öğeler";
+                    case DevExpress.XtraBars.Localization.BarString.CloseButton: return "Kapat";
+                    case DevExpress.XtraBars.Localization.BarString.CustomizeButton: return "Özelleştir";
+                    case DevExpress.XtraBars.Localization.BarString.CustomizeWindowCaption: return "Özelleştirme";
+                    case DevExpress.XtraBars.Localization.BarString.HelpButton: return "Yardım";
+                    case DevExpress.XtraBars.Localization.BarString.MaximizeButton: return "Maksimize";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationFade: return "Solgun";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationNone: return "Yok";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationRandom: return "Rastgele";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationSlide: return "Slayt";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationSystem: return "Varsayılan";
+                    case DevExpress.XtraBars.Localization.BarString.MenuAnimationUnfold: return "Çıkar";
+                    case DevExpress.XtraBars.Localization.BarString.MinimizeButton: return "Küçült";
+                    case DevExpress.XtraBars.Localization.BarString.NewMenuName: return "Ana Menü";
+                    case DevExpress.XtraBars.Localization.BarString.NewStatusBarName: return "Durum Çubuğu";
+                    case DevExpress.XtraBars.Localization.BarString.NewToolbarCaption: return "Yeni Araç Çubuğu";
+                    case DevExpress.XtraBars.Localization.BarString.NewToolbarCustomNameFormat: return "Özel {0}";
+                    case DevExpress.XtraBars.Localization.BarString.NewToolbarName: return "Araçlar";
+                    case DevExpress.XtraBars.Localization.BarString.None: return "Yok";
+                    case DevExpress.XtraBars.Localization.BarString.PopupMenuEditor: return "Popup Menü Editör";
+                    case DevExpress.XtraBars.Localization.BarString.RenameToolbarCaption: return "Yeniden Adlandır Araç Çubuğu";
+                    case DevExpress.XtraBars.Localization.BarString.ResetBar: return "Sıfırla";
+                    case DevExpress.XtraBars.Localization.BarString.ResetBarCaption: return "Özelleştir";
+                    case DevExpress.XtraBars.Localization.BarString.ResetButton: return "Araç Çubuğunu Sıfırla";
+                    case DevExpress.XtraBars.Localization.BarString.RestoreButton: return "Varsayılanı Yükle";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonAllPages: return "Tüm Sayfalar";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonGalleryFilter: return "Tüm Gruplar";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonGalleryFilterNone: return "Hiçbiri";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonToolbarAbove: return "Hızlı Erişim Araç Çubuğu Göster";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonToolbarAdd: return "Hızlı Erişim Araç Çubuğu Ekle";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonToolbarBelow: return "Hızlı Erişim Araç Çubuğu Göster";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonToolbarMinimizeRibbon: return "Küçült";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonToolbarRemove: return "Hızlı Erişim Araç Çubuğu Kaldır";
+                    case DevExpress.XtraBars.Localization.BarString.RibbonUnassignedPages: return "Atanmamış sayfalar";
+                    case DevExpress.XtraBars.Localization.BarString.ToolBarMenu: return "Araç Çubuğu";
+                    case DevExpress.XtraBars.Localization.BarString.ToolbarNameCaption: return "Araç Çubuğu Adı";
+
+
+                }
+                return base.GetLocalizedString(id);
+            }
+        }
+
+        public class EditorLocalizer : DevExpress.XtraEditors.Controls.Localizer
+        {
+            public override string GetLocalizedString(StringId id)
+            {
+                switch (id)
+                {
+                    case StringId.Apply: return "Uygula";
+                    case StringId.CalcButtonBack: return "Geri";
+                    case StringId.CalcButtonC: return "C";
+                    case StringId.CalcButtonCE: return "CE";
+                    case StringId.CalcButtonMC: return "MC";
+                    case StringId.CalcButtonMR: return "MR";
+                    case StringId.CalcButtonMS: return "MS";
+                    case StringId.CalcButtonMx: return "M+";
+                    case StringId.CalcButtonSqrt: return " ?× ";
+                    case StringId.CalcError: return "Hesaplama Hatası";
+                    case StringId.Cancel: return "İptal";
+                    case StringId.CaptionError: return "Hata";
+                    case StringId.CheckChecked: return "İşaretli";
+                    case StringId.CheckIndeterminate: return "Belirsiz";
+                    case StringId.CheckUnchecked: return "İşaretsiz";
+                    case StringId.ColorTabCustom: return "Özel";
+                    case StringId.ColorTabWeb: return "Web";
+                    case StringId.ColorTabSystem: return "Sistem";
+                    case StringId.ContainerAccessibleEditName: return "Erişilebilir Editör Adı";
+                    case StringId.DataEmpty: return "Veri Yok";
+                    case StringId.DateEditClear: return "Temizle";
+                    case StringId.DateEditToday: return "Bugün";
+                    case StringId.FilterClauseAnyOf: return "Bunlardan Biri";
+                    case StringId.FilterClauseBeginsWith: return "İle Başlayan";
+                    case StringId.FilterClauseBetween: return "Arasında";
+                    case StringId.FilterClauseBetweenAnd: return "Arasında Ve";
+                    case StringId.FilterClauseContains: return "İçeren";
+                    case StringId.FilterClauseDoesNotContain: return "İçermeyen";
+                    case StringId.FilterClauseDoesNotEqual: return "Eşit Değildir";
+                    case StringId.FilterClauseEndsWith: return "İle Biten";
+                    case StringId.FilterClauseEquals: return "Eşittir";
+                    case StringId.FilterClauseGreater: return "Büyüktür";
+                    case StringId.FilterClauseGreaterOrEqual: return "Büyüktür veya Eşittir";
+                    case StringId.FilterClauseIsNotNull: return "<BOŞ> Olmayan";
+                    case StringId.FilterClauseIsNull: return "<BOŞ> Olan";
+                    case StringId.FilterClauseLess: return "Küçüktür";
+                    case StringId.FilterClauseLessOrEqual: return "Küçüktür veya Eşittir";
+                    case StringId.FilterClauseLike: return "Benzeyen";
+                    case StringId.FilterClauseNoneOf: return "Bunlardan Değil";
+                    case StringId.FilterClauseNotBetween: return "Arasında Değil";
+                    case StringId.FilterClauseNotLike: return "Benzemeyen";
+                    case StringId.FilterCriteriaToStringBetween: return "Arasında";
+                    case StringId.FilterCriteriaToStringBinaryOperatorBitwiseAnd: return "&";
+                    case StringId.FilterCriteriaToStringBinaryOperatorBitwiseOr: return "|";
+                    case StringId.FilterCriteriaToStringBinaryOperatorBitwiseXor: return "^";
+                    case StringId.FilterCriteriaToStringBinaryOperatorDivide: return "/";
+                    case StringId.FilterCriteriaToStringBinaryOperatorEqual: return "=";
+                    case StringId.FilterCriteriaToStringBinaryOperatorGreater: return ">";
+                    case StringId.FilterCriteriaToStringBinaryOperatorGreaterOrEqual: return ">=";
+                    case StringId.FilterCriteriaToStringBinaryOperatorLess: return "<";
+                    case StringId.FilterCriteriaToStringBinaryOperatorLessOrEqual: return "<=";
+                    case StringId.FilterCriteriaToStringBinaryOperatorLike: return "Benzer";
+                    case StringId.FilterCriteriaToStringBinaryOperatorMinus: return "-";
+                    case StringId.FilterCriteriaToStringBinaryOperatorModulo: return "%";
+                    case StringId.FilterCriteriaToStringBinaryOperatorMultiply: return "*";
+                    case StringId.FilterCriteriaToStringBinaryOperatorNotEqual: return "!=";
+                    case StringId.FilterCriteriaToStringBinaryOperatorPlus: return "+";
+                    case StringId.FilterCriteriaToStringFunctionCustom: return "OZEL";
+                    case StringId.FilterCriteriaToStringFunctionIif: return "EGER";
+                    case StringId.FilterCriteriaToStringFunctionIsNull: return "BOSMU";
+                    case StringId.FilterCriteriaToStringFunctionLen: return "UZUNLUK";
+                    case StringId.FilterCriteriaToStringFunctionLower: return "KUCUKHARF";
+                    case StringId.FilterCriteriaToStringFunctionNone: return "YOK";
+                    case StringId.FilterCriteriaToStringFunctionSubstring: return "KISIMAL";
+                    case StringId.FilterCriteriaToStringFunctionTrim: return "BOSLUKLARIAT";
+                    case StringId.FilterCriteriaToStringFunctionUpper: return "BUYUKHARF";
+                    case StringId.FilterCriteriaToStringGroupOperatorAnd: return "VE";
+                    case StringId.FilterCriteriaToStringGroupOperatorOr: return "VEYA";
+                    case StringId.FilterCriteriaToStringIn: return "ICINDE";
+                    case StringId.FilterCriteriaToStringIsNotNull: return "BOSDEGIL";
+                    case StringId.FilterCriteriaToStringNotLike: return "BENZEMEYEN";
+                    case StringId.FilterCriteriaToStringUnaryOperatorBitwiseNot: return "~";
+                    case StringId.FilterCriteriaToStringUnaryOperatorIsNull: return "BOS";
+                    case StringId.FilterCriteriaToStringUnaryOperatorMinus: return "-";
+                    case StringId.FilterCriteriaToStringUnaryOperatorNot: return "DEGIL";
+                    case StringId.FilterCriteriaToStringUnaryOperatorPlus: return "+";
+                    case StringId.FilterEmptyEnter: return "Boş Girilen";
+                    case StringId.FilterEmptyValue: return "Boş Değer";
+                    case StringId.FilterGroupAnd: return "ve";
+                    case StringId.FilterGroupNotAnd: return "ve değil";
+                    case StringId.FilterGroupNotOr: return "veya değil";
+                    case StringId.FilterGroupOr: return "veya";
+                    case StringId.FilterMenuClearAll: return "Hepsini Temizle";
+                    case StringId.FilterMenuConditionAdd: return "Koşul Ekle";
+                    case StringId.FilterMenuGroupAdd: return "Grup Ekle";
+                    case StringId.FilterMenuRowRemove: return "Satır Sil";
+                    case StringId.FilterShowAll: return "Hepsini Göster";
+                    case StringId.FilterToolTipElementAdd: return "Listeye Yeni bir eleman ekler.";
+                    case StringId.FilterToolTipKeysAdd: return "(Klavyedeki Insert veya + düğmelerini kullanarak)";
+                    case StringId.FilterToolTipKeysRemove: return "(Klavyedeki Delete veya - düğmelerini kullanarak)";
+                    case StringId.FilterToolTipNodeAction: return "Hareketler.";
+                    case StringId.FilterToolTipNodeAdd: return "Bu gruba yeni bir koşul ekler.";
+                    case StringId.FilterToolTipNodeRemove: return "Bu koşulu siler.";
+                    case StringId.FilterToolTipValueType: return "Değeri diğer alan değerleri ile karşılaştırır.";
+                    case StringId.ImagePopupEmpty: return "Boş";
+                    case StringId.ImagePopupPicture: return "Resim";
+                    case StringId.InvalidValueText: return "Hatalı değer!";
+                    case StringId.LookUpColumnDefaultName: return "Ad";
+                    case StringId.LookUpEditValueIsNull: return "";
+                    case StringId.LookUpInvalidEditValueType: return "Değer tipi geçersiz";
+                    case StringId.MaskBoxValidateError: return "Girilen değer geçersiz. Düzeltmek ister misiniz?\r\n\r\nEvet - editöre dön ve değeri düzelt.\r\nHayır - değeri olduğu gibi bırak.\r\nİptal - önceki değere sıfırla.\r\n";
+                    case StringId.NavigatorAppendButtonHint: return "Ekle";
+                    case StringId.NavigatorCancelEditButtonHint: return "Düzenlemeyi iptal et";
+                    case StringId.NavigatorEditButtonHint: return "Düzenle";
+                    case StringId.NavigatorEndEditButtonHint: return "Düzenlemeyi bitir";
+                    case StringId.NavigatorFirstButtonHint: return "İlk kayda git";
+                    case StringId.NavigatorLastButtonHint: return "Son kayda git";
+                    case StringId.NavigatorNextButtonHint: return "Sonraki kayda git";
+                    case StringId.NavigatorNextPageButtonHint: return "Sonraki sayfaya git";
+                    case StringId.NavigatorPreviousButtonHint: return "Önceki kayda git";
+                    case StringId.NavigatorPreviousPageButtonHint: return "Önceki sayfaya git";
+                    case StringId.NavigatorRemoveButtonHint: return "Sil";
+                    case StringId.NavigatorTextStringFormat: return "Kayıt {0} / {1}";
+                    case StringId.None: return "";
+                    case StringId.NotValidArrayLength: return "Geçersiz dizi uzunluğu";
+                    case StringId.OK: return "Tamam";
+                    case StringId.PictureEditCopyImageError: return "Resim kopyalanamadı";
+                    case StringId.PictureEditMenuCopy: return "Kopyala";
+                    case StringId.PictureEditMenuCut: return "Kes";
+                    case StringId.PictureEditMenuDelete: return "Sil";
+                    case StringId.PictureEditMenuLoad: return "Yükle";
+                    case StringId.PictureEditMenuPaste: return "Yapıştır";
+                    case StringId.PictureEditMenuSave: return "Kaydet";
+                    case StringId.PictureEditOpenFileError: return "Geçersiz resim formatı";
+                    case StringId.PictureEditOpenFileErrorCaption: return "Dosya Açma Hatası";
+                    case StringId.PictureEditOpenFileFilter: return "Bitmap Dosyaları (*.bmp)|*.bmp|GIF Dosyaları (*.gif)|*.gif|JPEG Dosyaları (*.jpg;*.jpeg)|*.jpg;*.jpeg|Ikon Dosyaları (*.ico)|*.ico|Tüm Resim Dosyaları |*.bmp;*.gif;*.jpg;*.jpeg;*.ico;*.png;*.tif|Tüm Dosyalar |*.*";
+                    case StringId.PictureEditOpenFileTitle: return "Aç";
+                    case StringId.PictureEditSaveFileFilter: return "Bitmap Dosyaları (*.bmp)|*.bmp|GIF Dosyaları (*.gif)|*.gif|JPEG Dosyaları (*.jpg)|*.jpg ";
+                    case StringId.PictureEditSaveFileTitle: return "Farklı Kaydet";
+                    case StringId.PreviewPanelText: return "Önizleme:";
+                    case StringId.TabHeaderButtonClose: return "Kapat";
+                    case StringId.TabHeaderButtonNext: return "Sonraki";
+                    case StringId.TabHeaderButtonPrev: return "Önceki";
+                    case StringId.TextEditMenuCopy: return "Kopyala";
+                    case StringId.TextEditMenuCut: return "Kes";
+                    case StringId.TextEditMenuDelete: return "Sil";
+                    case StringId.TextEditMenuPaste: return "Yapıştır";
+                    case StringId.TextEditMenuSelectAll: return "Tümünü Seç";
+                    case StringId.TextEditMenuUndo: return "Geri Al";
+                    case StringId.TransparentBackColorNotSupported: return "Bu kontrol transparan arkaplan rengini desteklemiyor";
+                    case StringId.UnknownPictureFormat: return "Bilinmeyen resim formatı";
+                    case StringId.XtraMessageBoxAbortButtonText: return "Durdur";
+                    case StringId.XtraMessageBoxCancelButtonText: return "İptal";
+                    case StringId.XtraMessageBoxIgnoreButtonText: return "İhmal Et";
+                    case StringId.XtraMessageBoxNoButtonText: return "Hayır";
+                    case StringId.XtraMessageBoxOkButtonText: return "Tamam";
+                    case StringId.XtraMessageBoxRetryButtonText: return "Tekrar Dene";
+                    case StringId.XtraMessageBoxYesButtonText: return "Evet";
+                }
+                return base.GetLocalizedString(id);
+            }
+        }
+
+        public class PrintLocalizer : DevExpress.XtraPrinting.Localization.PreviewLocalizer
+        {
+            public override string GetLocalizedString(PreviewStringId id)
+            {
+                switch (id)
+                {
+                    case PreviewStringId.BarText_MainMenu: return "Ana Menü";
+                    case PreviewStringId.BarText_StatusBar: return "Durum Çubuğu";
+                    case PreviewStringId.BarText_Toolbar: return "Araç Çubuğu";
+                    case PreviewStringId.Button_Apply: return "Uygula";
+                    case PreviewStringId.Button_Cancel: return "İptal";
+                    case PreviewStringId.Button_Help: return "Yardım";
+                    case PreviewStringId.Button_Ok: return "Tamam";
+                    case PreviewStringId.EMail_From: return "Gönderen";
+                    case PreviewStringId.EmptyString: return "";
+                    case PreviewStringId.ExportOption_HtmlCharacterSet: return "HTML Karakter Seti";
+                    case PreviewStringId.ExportOption_HtmlExportMode: return "Mod";
+                    case PreviewStringId.ExportOption_HtmlExportMode_DifferentFiles: return "Farklı dosyalar";
+                    case PreviewStringId.ExportOption_HtmlExportMode_SingleFile: return "Tek dosya";
+                    case PreviewStringId.ExportOption_HtmlExportMode_SingleFilePageByPage: return "Her sayfa için bir dosya";
+                    case PreviewStringId.ExportOption_HtmlPageBorderColor: return "Sayfa Çerçeve Rengi";
+                    case PreviewStringId.ExportOption_HtmlPageBorderWidth: return "Sayfa Çerçeve Kalınlığı";
+                    case PreviewStringId.ExportOption_HtmlPageRange: return "Aralık";
+                    case PreviewStringId.ExportOption_HtmlRemoveSecondarySymbols: return "İkincil sembolleri sil";
+                    case PreviewStringId.ExportOption_HtmlTitle: return "Başlık";
+                    case PreviewStringId.ExportOption_ImageExportMode: return "Mod";
+                    case PreviewStringId.ExportOption_ImageExportMode_DifferentFiles: return "Farklı dosyalar";
+                    case PreviewStringId.ExportOption_ImageExportMode_SingleFile: return "Tek Dosya";
+                    case PreviewStringId.ExportOption_ImageExportMode_SingleFilePageByPage: return "Her sayfa için bir dosya";
+                    case PreviewStringId.ExportOption_ImageFormat: return "Resim Formatı";
+                    case PreviewStringId.ExportOption_ImagePageBorderColor: return "Çerçeve Rengi";
+                    case PreviewStringId.ExportOption_ImagePageBorderWidth: return "Çerçeve Kalınlığı";
+                    case PreviewStringId.ExportOption_ImagePageRange: return "Sayfa Aralığı";
+                    case PreviewStringId.ExportOption_ImageResolution: return "Çözünürlük";
+                    case PreviewStringId.ExportOption_NativeFormatCompressed: return "Doğal Format (Sıkıştırılmış)";
+                    case PreviewStringId.ExportOption_PdfCompressed: return "Sıkıştır";
+                    case PreviewStringId.ExportOption_PdfDocumentApplication: return "Uygulama Adı";
+                    case PreviewStringId.ExportOption_PdfDocumentAuthor: return "Yazar";
+                    case PreviewStringId.ExportOption_PdfDocumentKeywords: return "Anahtar Kelimeler";
+                    case PreviewStringId.ExportOption_PdfDocumentSubject: return "Konu";
+                    case PreviewStringId.ExportOption_PdfDocumentTitle: return "Başlık";
+                    case PreviewStringId.ExportOption_PdfImageQuality: return "Resim Kalitesi";
+                    case PreviewStringId.ExportOption_PdfImageQuality_High: return "Yüksek";
+                    case PreviewStringId.ExportOption_PdfImageQuality_Highest: return "En Yüksek";
+                    case PreviewStringId.ExportOption_PdfImageQuality_Low: return "Düşük";
+                    case PreviewStringId.ExportOption_PdfImageQuality_Lowest: return "En Düşük";
+                    case PreviewStringId.ExportOption_PdfImageQuality_Medium: return "Orta";
+                    case PreviewStringId.ExportOption_PdfNeverEmbeddedFonts: return "Gömülü fontları kullanma";
+                    case PreviewStringId.ExportOption_PdfPageRange: return "Sayfa Aralığı";
+                    case PreviewStringId.ExportOption_PdfShowPrintDialogOnOpen: return "Açıldığında yazdırma diyaloğunu göster";
+                    case PreviewStringId.ExportOption_RtfExportMode: return "Mod";
+                    case PreviewStringId.ExportOption_RtfExportMode_SingleFile: return "Tek Dosya";
+                    case PreviewStringId.ExportOption_RtfExportMode_SingleFilePageByPage: return "Her sayfa için bir dosya";
+                    case PreviewStringId.ExportOption_RtfExportWatermarks: return "Filigranı Kullan";
+                    case PreviewStringId.ExportOption_RtfPageRange: return "Sayfa Aralığı";
+                    case PreviewStringId.ExportOption_TextEncoding: return "Karakter Kodlaması";
+                    case PreviewStringId.ExportOption_TextQuoteStringsWithSeparators: return "Ayraç kullan";
+                    case PreviewStringId.ExportOption_TextSeparator: return "Ayraç";
+                    case PreviewStringId.ExportOption_TextSeparator_TabAlias: return base.GetLocalizedString(id);
+                    case PreviewStringId.ExportOption_XlsShowGridLines: return "Çizgileri Göster";
+                    case PreviewStringId.ExportOption_XlsUseNativeFormat: return "Doğal Format";
+                    case PreviewStringId.ExportOption_XlsExportHyperlinks: return "Linkleri Göster";
+                    case PreviewStringId.ExportOption_XlsSheetName: return "Sayfa Adı:";
+                    case PreviewStringId.ExportOptionsForm_CaptionCsv: return "Dışarı al - CSV";
+                    case PreviewStringId.ExportOptionsForm_CaptionHtml: return "Dışarı al - HTML";
+                    case PreviewStringId.ExportOptionsForm_CaptionImage: return "Dışarı al - Resim";
+                    case PreviewStringId.ExportOptionsForm_CaptionMht: return "Dışarı al - MHT";
+                    case PreviewStringId.ExportOptionsForm_CaptionNativeOptions: return "Genel Seçenekler";
+                    case PreviewStringId.ExportOptionsForm_CaptionPdf: return "Dışarı al - PDF";
+                    case PreviewStringId.ExportOptionsForm_CaptionRtf: return "Dışarı al - RTF";
+                    case PreviewStringId.ExportOptionsForm_CaptionTxt: return "Dışarı al - TXT";
+                    case PreviewStringId.ExportOptionsForm_CaptionXls: return "Dışarı al - XLS";
+                    case PreviewStringId.FolderBrowseDlg_ExportDirectory: return "Dışarı al - Dizin";
+                    case PreviewStringId.Margin_BottomMargin: return "Alt boşluk";
+                    case PreviewStringId.Margin_Inch: return "İnç";
+                    case PreviewStringId.Margin_LeftMargin: return "Sol boşluk";
+                    case PreviewStringId.Margin_Millimeter: return "Milimetre";
+                    case PreviewStringId.Margin_RightMargin: return "Sağ boşluk";
+                    case PreviewStringId.Margin_TopMargin: return "Üst boşluk";
+                    case PreviewStringId.MenuItem_BackgrColor: return "Arkaplan Rengi";
+                    case PreviewStringId.MenuItem_Background: return "Arkaplan";
+                    case PreviewStringId.MenuItem_CsvDocument: return "CVS Dökümanı";
+                    case PreviewStringId.MenuItem_Exit: return "Çıkış";
+                    case PreviewStringId.MenuItem_Export: return "Dışarı Al...";
+                    case PreviewStringId.MenuItem_File: return "Dosya";
+                    case PreviewStringId.MenuItem_GraphicDocument: return "Resim";
+                    case PreviewStringId.MenuItem_HtmDocument: return "HTML";
+                    case PreviewStringId.MenuItem_MhtDocument: return "MHT";
+                    case PreviewStringId.MenuItem_PageLayout: return "Sayfa Yerleşimi";
+                    case PreviewStringId.MenuItem_PageSetup: return "Sayfa Ayarları";
+                    case PreviewStringId.MenuItem_PdfDocument: return "PDF";
+                    case PreviewStringId.MenuItem_Print: return "Yazdır...";
+                    case PreviewStringId.MenuItem_PrintDirect: return "Direk Yazdır";
+                    case PreviewStringId.MenuItem_RtfDocument: return "RTF";
+                    case PreviewStringId.MenuItem_Send: return "Gönder...";
+                    case PreviewStringId.MenuItem_TxtDocument: return "TXT";
+                    case PreviewStringId.MenuItem_View: return "Görünüm";
+                    case PreviewStringId.MenuItem_ViewContinuous: return "Devameden Sayfa";
+                    case PreviewStringId.MenuItem_ViewFacing: return "Tekli";
+                    case PreviewStringId.MenuItem_ViewStatusbar: return "Durum Çubuğu";
+                    case PreviewStringId.MenuItem_ViewToolbar: return "Araç Çubuğu";
+                    case PreviewStringId.MenuItem_Watermark: return "Filigran";
+                    case PreviewStringId.MenuItem_XlsDocument: return "XLS";
+                    case PreviewStringId.MenuItem_ZoomPageWidth: return "Sayfa Genişliği";
+                    case PreviewStringId.MenuItem_ZoomTextWidth: return "Yazı Genişliği";
+                    case PreviewStringId.MenuItem_ZoomTwoPages: return "İki Sayfa";
+                    case PreviewStringId.MenuItem_ZoomWholePage: return "Tüm Sayfa";
+                    case PreviewStringId.MPForm_Lbl_Pages: return "Sayfalar";
+                    case PreviewStringId.Msg_CannotAccessFile: return "Dosyaya erişilemiyor";
+                    case PreviewStringId.Msg_CantFitBarcodeToControlBounds: return "Yazma kontrolü yerleştirilemedi";
+                    case PreviewStringId.Msg_Caption: return "Yazdırma Önizleme";
+                    case PreviewStringId.Msg_CreatingDocument: return "Döküman yaratılıyor";
+                    case PreviewStringId.Msg_CustomDrawWarning: return "Özel çizim uyarısı";
+                    case PreviewStringId.Msg_EmptyDocument: return "Boş döküman";
+                    case PreviewStringId.Msg_FileDosntContainValidXml: return "Dosya uygun xml bulundurmuyor";
+                    case PreviewStringId.Msg_FileDosntHavePrnxExtention: return "Dosya Prnx yok";
+                    case PreviewStringId.Msg_FileReadOnly: return "Yalnız okunabilir dosya";
+                    case PreviewStringId.Msg_FontInvalidNumber: return "Hatalı yazı karakteri büyüklüğü";
+                    case PreviewStringId.Msg_IncorrectPageRange: return "Hatalı sayfa aralığı";
+                    case PreviewStringId.Msg_IncorrectZoomFactor: return "Hatalı yakınlaştırma faktörü";
+                    case PreviewStringId.Msg_InvalidBarcodeText: return "Hatalı barkod yazısı";
+                    case PreviewStringId.Msg_InvalidBarcodeTextFormat: return "Hatalı barkod formatı";
+                    case PreviewStringId.Msg_InvalidMeasurement: return "Yanlış ölçü";
+                    case PreviewStringId.Msg_NeedPrinter: return "Yazıcıya ihityaç var";
+                    case PreviewStringId.Msg_NoDifferentFilesInStream: return "Farklı dosyalar yok.";
+                    case PreviewStringId.Msg_NotSupportedFont: return "Desteklenmeyen yazı karakteri";
+                    case PreviewStringId.Msg_OpenFileQuestion: return "Dışarı alınan dosya açılsın mı ?";
+                    case PreviewStringId.Msg_OpenFileQuestionCaption: return "Dosya Açılsın mı ?";
+                    case PreviewStringId.Msg_PageMarginsWarning: return "Sayfa çerçeve uyarısı";
+                    case PreviewStringId.Msg_SearchDialogFinishedSearching: return "Arama tamamlandı";
+                    case PreviewStringId.Msg_SearchDialogReady: return "Hazır";
+                    case PreviewStringId.Msg_SearchDialogTotalFound: return "Toplam bulunan";
+                    case PreviewStringId.Msg_UnavailableNetPrinter: return "Erişilemeyen ağ yazıcısı";
+                    case PreviewStringId.Msg_WrongPageSettings: return "Hatalı sayfa ayarları";
+                    case PreviewStringId.Msg_WrongPrinter: return "Yanlış yazıcı";
+                    case PreviewStringId.Msg_WrongPrinting: return "Yanlış yazdırma";
+                    case PreviewStringId.Msg_XlsMoreThanMaxColumns: return "Sütun sayısı sınırı aşıldı";
+                    case PreviewStringId.Msg_XlsMoreThanMaxRows: return "Satır sayısı sınırı aşıldı";
+                    case PreviewStringId.OpenFileDialog_Filter: return base.GetLocalizedString(id);
+                    case PreviewStringId.OpenFileDialog_Title: return "Aç";
+                    case PreviewStringId.PageInfo_PageDate: return "Tarih";
+                    case PreviewStringId.PageInfo_PageNumber: return "SayfaNo";
+                    case PreviewStringId.PageInfo_PageNumberOfTotal: return "ToplamSayfa";
+                    case PreviewStringId.PageInfo_PageTime: return "Zaman";
+                    case PreviewStringId.PageInfo_PageUserName: return "Kullanici";
+                    case PreviewStringId.PreviewForm_Caption: return "Yazdırma Önizleme";
+
+                    case PreviewStringId.RibbonPreview_Open_Caption: return "Aç ...";
+                    case PreviewStringId.RibbonPreview_Save_Caption: return "Kaydet ...";
+                    //case PreviewStringId.RibbonPreview_ClosePreview_Caption: return "";
+                    //case PreviewStringId.RibbonPreview_EditPageHF_Caption: return "Başlık ve Altlığı Düzenle";
+                    //case PreviewStringId.RibbonPreview_EditPageHF_STipTitle: return "----------------";
+                    //case PreviewStringId.RibbonPreview_Watermark_Caption: return "Filigran";
+                    //
+                    //case PreviewStringId.SaveDlg_FilterBmp: return "BMP Resim";
+                    //case PreviewStringId.SaveDlg_FilterCsv: return "CVS Dosya";
+                    //case PreviewStringId.SaveDlg_FilterEmf: return "EMF Dosya";
+                    //case PreviewStringId.SaveDlg_FilterGif: return "GIF Resim";
+                    //case PreviewStringId.SaveDlg_FilterHtm: return "HTM Dosya";
+                    //case PreviewStringId.SaveDlg_FilterJpeg: return "JPEG Resim";
+                    //case PreviewStringId.SaveDlg_FilterMht: return "MHT Dosya";
+                    //case PreviewStringId.SaveDlg_FilterPdf: return "PDF Dosya";
+                    //case PreviewStringId.SaveDlg_FilterPng: return "PNG Resim";
+                    //case PreviewStringId.SaveDlg_FilterRtf: return "RTF Dosya";
+                    //case PreviewStringId.SaveDlg_FilterTiff: return "Tiff Resim";
+                    //case PreviewStringId.SaveDlg_FilterTxt: return "TXT Dosya";
+                    case PreviewStringId.SaveDlg_Title: return "Kaydet";
+                    case PreviewStringId.SB_PageInfo: return "Sayfa Bilgisi {0}";
+                    case PreviewStringId.SB_PageNone: return "Sayfa Yok {0}";
+                    case PreviewStringId.SB_PageOfPages: return "Sayfa : {0} / {1}";
+                    case PreviewStringId.SB_TTip_Stop: return "Durdur";
+                    case PreviewStringId.SB_ZoomFactor: return "Yakınlaştırma : ";
+                    case PreviewStringId.ScalePopup_AdjustTo: return "Buna Uydur:";
+                    case PreviewStringId.ScalePopup_FitTo: return "Buna Uydur :";
+                    case PreviewStringId.ScalePopup_GroupText: return "Boyutlandır";
+                    case PreviewStringId.ScalePopup_NormalSize: return "Normal";
+                    case PreviewStringId.ScalePopup_PagesWide: return "Tamamında";
+                    case PreviewStringId.ScrollingInfo_Page: return "Sayfa";
+                    case PreviewStringId.Shapes_Arrow: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_BackslantLine: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_BottomArrow: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Brace: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Bracket: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Cross: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_EightPointStar: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Ellipse: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_FivePointStar: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_FourPointStar: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Hexagon: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_HorizontalLine: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_LeftArrow: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Line: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Octagon: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Pentagon: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Polygon: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Rectangle: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_RightArrow: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_SixPointStar: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_SlantLine: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Square: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Star: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_ThreePointStar: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_TopArrow: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_Triangle: return base.GetLocalizedString(id);
+                    case PreviewStringId.Shapes_VerticalLine: return base.GetLocalizedString(id);
+                    case PreviewStringId.TB_TTip_Backgr: return "Arkaplan rengini ayarla";
+                    case PreviewStringId.TB_TTip_Close: return "Önizlemeyi sonlandırıp çık";
+                    case PreviewStringId.TB_TTip_Customize: return "Yazdırma özelleştirme";
+                    case PreviewStringId.TB_TTip_EditPageHF: return "Sayfa başlık ve altlığını düzenle";
+                    case PreviewStringId.TB_TTip_Export: return "Dışarı al";
+                    case PreviewStringId.TB_TTip_FirstPage: return "İlk Sayfa";
+                    case PreviewStringId.TB_TTip_HandTool: return "El aracı";
+                    case PreviewStringId.TB_TTip_LastPage: return "Son sayfa";
+                    case PreviewStringId.TB_TTip_Magnifier: return "Büyüteç";
+                    case PreviewStringId.TB_TTip_Map: return "Harita";
+                    case PreviewStringId.TB_TTip_MultiplePages: return "Çoklu sayfa";
+                    case PreviewStringId.TB_TTip_NextPage: return "Sonraki sayfa";
+                    case PreviewStringId.TB_TTip_Open: return "Aç";
+                    case PreviewStringId.TB_TTip_PageSetup: return "Sayfa ayarları";
+                    case PreviewStringId.TB_TTip_Parameters: return "Parametreler";
+                    case PreviewStringId.TB_TTip_PreviousPage: return "Önceki sayfa";
+                    case PreviewStringId.TB_TTip_Print: return "Yazıdr";
+                    case PreviewStringId.TB_TTip_PrintDirect: return "Direk yazdır";
+                    case PreviewStringId.TB_TTip_Save: return "Kaydet";
+                    case PreviewStringId.TB_TTip_Scale: return "Boyutlandır";
+                    case PreviewStringId.TB_TTip_Search: return "Ara";
+                    case PreviewStringId.TB_TTip_Send: return "Gönder";
+                    case PreviewStringId.TB_TTip_Watermark: return "Filigran";
+                    case PreviewStringId.TB_TTip_Zoom: return "Yakınlaştırma";
+                    case PreviewStringId.TB_TTip_ZoomIn: return "Yakınlaştır";
+                    case PreviewStringId.TB_TTip_ZoomOut: return "Uzaklaştır";
+                    case PreviewStringId.WMForm_Direction_BackwardDiagonal: return "Arkaya Çapraz";
+                    case PreviewStringId.WMForm_Direction_ForwardDiagonal: return "Öne Çapraz";
+                    case PreviewStringId.WMForm_Direction_Horizontal: return "Yatay";
+                    case PreviewStringId.WMForm_Direction_Vertical: return "Dikey";
+                    case PreviewStringId.WMForm_HorzAlign_Center: return "Ortala";
+                    case PreviewStringId.WMForm_HorzAlign_Left: return "Sola hizala";
+                    case PreviewStringId.WMForm_HorzAlign_Right: return "Sağa hizala";
+                    case PreviewStringId.WMForm_ImageClip: return "Ortala";
+                    case PreviewStringId.WMForm_ImageStretch: return "Tam Sığdır";
+                    case PreviewStringId.WMForm_ImageZoom: return "Yatay Sığdır";
+                    case PreviewStringId.WMForm_PageRangeRgrItem_All: return "Hepsi";
+                    case PreviewStringId.WMForm_PageRangeRgrItem_Pages: return "Aralık";
+                    case PreviewStringId.WMForm_PictureDlg_Title: return "Resim Seç";
+                    case PreviewStringId.WMForm_VertAlign_Bottom: return "Alt";
+                    case PreviewStringId.WMForm_VertAlign_Middle: return "Orta";
+                    case PreviewStringId.WMForm_VertAlign_Top: return "Üst";
+                    case PreviewStringId.WMForm_Watermark_Asap: return "ADRESE TESLİM";
+                    case PreviewStringId.WMForm_Watermark_Confidential: return "ÖZEL BİLGİ";
+                    case PreviewStringId.WMForm_Watermark_Copy: return "KOPYA";
+                    case PreviewStringId.WMForm_Watermark_DoNotCopy: return "KOPYALAMAK YASAKTIR";
+                    case PreviewStringId.WMForm_Watermark_Draft: return "TASLAK";
+                    case PreviewStringId.WMForm_Watermark_Evaluation: return "GEÇİCİ";
+                    case PreviewStringId.WMForm_Watermark_Original: return "ORJİNAL";
+                    case PreviewStringId.WMForm_Watermark_Personal: return "KİŞİYE ÖZEL";
+                    case PreviewStringId.WMForm_Watermark_Sample: return "ÖRNEK";
+                    case PreviewStringId.WMForm_Watermark_TopSecret: return "ÇOK GİZLİ";
+                    case PreviewStringId.WMForm_Watermark_Urgent: return "ACİL";
+                    case PreviewStringId.WMForm_ZOrderRgrItem_Behind: return "Arkada";
+                    case PreviewStringId.WMForm_ZOrderRgrItem_InFront: return "Önde";
+                }
+                return base.GetLocalizedString(id);
+            }
+        }
+    }
+}

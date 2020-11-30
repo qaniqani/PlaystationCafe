@@ -1,0 +1,232 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Inplus CMS</title>
+    <meta name="description" content="">
+    <meta name="author" content="revaxarts.com">
+    <!-- Google Font and style definitions -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:regular,bold">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- include the skins (change to dark if you like) -->
+    <link rel="stylesheet" href="css/light/theme.css" id="themestyle">
+    <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+    <!-- Apple iOS and Android stuff -->
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+    <!-- Apple iOS and Android stuff - don't remove! -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1">
+    <!-- Use Google CDN for jQuery and jQuery UI -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>
+    <!-- Loading JS Files this way is not recommended! Merge them but keep their order -->
+    <!-- some basic functions -->
+    <script src="js/functions.js"></script>
+    <!-- all Third Party Plugins and Whitelabel Plugins -->
+    <script src="js/plugins.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/flot.js"></script>
+    <script src="js/elfinder.js"></script>
+    <script src="js/datatables.js" charset="ISO-8859-1"></script>
+    <script src="js/wl_Alert.js"></script>
+    <script src="js/wl_Autocomplete.js"></script>
+    <script src="js/wl_Breadcrumb.js"></script>
+    <script src="js/wl_Calendar.js"></script>
+    <script src="js/wl_Chart.js"></script>
+    <script src="js/wl_Color.js"></script>
+    <script src="js/wl_Date.js"></script>
+    <script src="js/wl_Editor.js"></script>
+    <script src="js/wl_File.js"></script>
+    <script src="js/wl_Dialog.js"></script>
+    <script src="js/wl_Fileexplorer.js"></script>
+    <script src="js/wl_Form.js"></script>
+    <script src="js/wl_Gallery.js"></script>
+    <script src="js/wl_Multiselect.js"></script>
+    <script src="js/wl_Number.js"></script>
+    <script src="js/wl_Password.js"></script>
+    <script src="js/wl_Slider.js"></script>
+    <script src="js/wl_Store.js"></script>
+    <script src="js/wl_Time.js"></script>
+    <script src="js/wl_Valid.js"></script>
+    <script src="js/wl_Widget.js"></script>
+    <!-- configuration to overwrite settings -->
+    <script src="js/config.js"></script>
+    <!-- the script which handles all the access to plugins etc... -->
+    <script src="js/script.js"></script>
+    
+    
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server" id="body">
+    <form id="form1" runat="server">
+    <div id="pageoptions">
+        <ul>
+            <li><a href="index.aspx?cikis=1">Çıkış</a></li>
+            <li><a href="#" style="display: none" id="wl_config">Site Map</a></li>
+            <li><a href="SiteAyar.aspx">Ayarlar</a></li>
+        </ul>
+        <div>
+            <h3>
+                Site Map</h3>
+            <p>
+            </p>
+        </div>
+    </div>
+    <header>
+		     <div id="logo">
+			    <a href="Default.aspx"><div style="height:40px; width="224px"></div></a>
+		    </div>
+		    <div id="header">
+			    <ul id="headernav">
+	<%--			    <li><ul>
+					    <li><a href="icons.html">Icons</a><span>300+</span></li>
+					    <li><a href="#">Submenu</a><span>4</span>
+						    <ul>
+							    <li><a href="#">Just</a></li>
+							    <li><a href="#">another</a></li>
+							    <li><a href="#">Dropdown</a></li>
+							    <li><a href="#">Menu</a></li>
+						    </ul>
+					    </li>
+					    <li><a href="login.html">Login</a></li>
+					    <li><a href="wizard.html">Wizard</a><span>Bonus</span></li>
+					    <li><a href="#">Errorpage</a><span>new</span>
+						    <ul>
+							    <li><a href="error-403.html">403</a></li>
+							    <li><a href="error-404.html">404</a></li>
+							    <li><a href="error-405.html">405</a></li>
+							    <li><a href="error-500.html">500</a></li>
+							    <li><a href="error-503.html">503</a></li>
+						    </ul>
+					    </li>
+				    </ul></li>--%>
+			    </ul>
+			    <ul id="searchboxresult">
+			    </ul>
+		    </div>
+	    </header>
+    <nav>
+			<ul id="nav">
+				<li class="i_house"><a href="Default.aspx"><span>Anasayfa</span></a></li>
+				<li id="likullanici" runat="server" visible="true" class="i_user"><a><span>Kullanıcılar</span></a>
+                  <ul>
+					<li><a href="KullaniciBelirle.aspx" title="Kullanıcı Listesi"><span>Kullanıcı Listesi</span></a></li>
+                    <li><a href="KullaniciEkle.aspx" title="Yeni Kullanıcı Ekle"><span>Kullanıcı Ekle</span></a></li>
+				   </ul>
+                </li>
+                 <li id="li4" runat="server" visible="true" class="i_list_image"><a><span>Lisanslamalar</span></a>
+                   <ul>
+                        <li id="li5" runat="server" visible="true" class="i_breadcrumb"><a href="Lisanslar.aspx" title="Lisanslar" tag="Lisanslar"><span>Tüm Lisanslar</span></a></li>
+                       <li id="li6" runat="server" visible="true" class="i_breadcrumb"><a href="LisansDetay.aspx" title="Lisans Detayları" tag="Lisans Detayları"><span>Lisans Detayları</span></a></li>
+                   </ul>
+                </li>
+                <li id="li9" runat="server" visible="true" class="i_list_image"><a><span>Reklamlar</span></a>
+                   <ul>
+                        <li id="li13" runat="server" visible="true" class="i_breadcrumb"><a href="ReklamListesi.aspx" title="Reklamlar" tag="Reklamlar"><span>Tüm Reklamlar</span></a></li>
+                       <li id="li14" runat="server" visible="true" class="i_breadcrumb"><a href="reklam.aspx" title="Reklam Ekle" tag="Reklam Ekle"><span>Reklam Ekle</span></a></li>
+                   </ul>
+                </li>
+                <li id="li10" runat="server" visible="true" class="i_list_image"><a><span>Kategoriler</span></a>
+                   <ul>
+                        <li id="li11" runat="server" visible="true" class="i_breadcrumb"><a href="KategoriEkle.aspx" title="Kategori Ekle" tag="Kategori Ekle"><span>Kategori Ekle</span></a></li>
+                       <li id="li12" runat="server" visible="true" class="i_breadcrumb"><a href="katdegistir.aspx" title="Kategori Değiştir" tag="Kategori Değiştir"><span>Kategori Değiştir</span></a></li>
+                   </ul>
+                </li>
+                 <li id="li7" runat="server" visible="true" class="i_list_image"><a><span>İçerikler</span></a>
+                   <ul>
+                        <li id="likategori" runat="server" visible="true" class="i_breadcrumb"><a href="icerikekle.aspx" title="İçerik Ekle" tag="İçerik Ekle"><span>İçerik Ekle</span></a></li>
+                       <li id="li8" runat="server" visible="true" class="i_breadcrumb"><a href="iceriklistesi.aspx" title="İçerik Listesi" tag="İçerik Listesi"><span>İçerik Listesi</span></a></li>
+                   </ul>
+                </li>
+                <%--<li id="li6" runat="server" visible="true" class="i_list_image"><a><span>Ne Yaparız?</span></a>
+                   <ul>
+                        <li id="li8" runat="server" visible="true" class="i_breadcrumb"><a href="BizKimizEkle.aspx" title="Biz Kimiz Kategorisinde Ne Yaparız?/Yazı Ekle/Düzenle" tag="Ne Yaparız?/Yazı Ekle/Düzenle"><span>Yazı Ekle/Düzenle</span></a></li>
+                       <li id="li9" runat="server" visible="true" class="i_breadcrumb"><a href="BizKimizEkle.aspx" title="Biz Kimiz Kategorisinde Ne Yaparız?/Görsel Ekle" tag="Ne Yaparız?/Görsel Ekle"><span>Görsel Ekle</span></a></li>
+                   </ul>
+                </li>
+                <li id="li10" runat="server" visible="true" class="i_list_image"><a><span>Neler Yaptık?</span></a>
+                   <ul>
+                        <li id="li11" runat="server" visible="true" class="i_breadcrumb"><a href="BizKimizEkle.aspx" title="Biz Kimiz Kategorisinde Neler Yaptık?/Yazı Ekle/Düzenle" tag="Neler Yaptık?/Yazı Ekle/Düzenle"><span>Yazı Ekle/Düzenle</span></a></li>
+                       <li id="li12" runat="server" visible="true" class="i_breadcrumb"><a href="BizKimizEkle.aspx" title="Biz Kimiz Kategorisinde Neler Yaptık?/Görsel Ekle" tag="Neler Yaptık?/Görsel Ekle"><span>Görsel Ekle</span></a></li>
+                   </ul>
+                </li>--%>
+
+              <%--href="AlbumResimEkle.aspx"  <li id="li4" runat="server" visible="true" class="i_images"><a href="AlbumResimEkle2.aspx"><span>Referanslar</span></a></li>--%>
+				
+				<li id="liyorum" runat="server" visible="false" class="i_user_comment"><a href="YorumListesi.aspx"><span>Yorumlar</span></a></li>
+                <li id="li1" runat="server" visible="false" class="i_user_comment"><a href="SorularListesi.aspx"><span>Sorular</span></a></li>
+				<li id="liuyelik" runat="server" visible="false" class="i_users"><a ><span>Üyelik Sistemi</span></a>
+                  <ul>
+					<li><a href="UyeListesi.aspx" title="Üye Listesi"><span>Üye Listesi</span></a></li>
+                    <li><a href="UyeGuncelle.aspx" title="Üye Ekle-Düzenle"><span>Üye Ekle</span></a></li>
+				   </ul>
+                </li>
+				<li id="lihaber" runat="server" visible="false" class="i_paperclip"><a><span>Basın Odası</span></a>
+                   <ul>                	
+					<li><a href="HaberveDuyuruListesi.aspx" title="Haber-Duyuru Listesi"><span>Haber Listesi</span></a></li>
+                    <li><a href="HaberveDuyuruEkle.aspx" title="Haber-Duyuru Ekle-Çıkar"><span>Haber Ekle</span></a></li>
+                       <li><a href="HaberResimEkle.aspx" title="Haber-Resim Ekle-Çıkar"><span>Haber Resim Ekle</span></a></li>
+				   </ul>
+                </li>
+                <li id="lislider" runat="server" visible="true" class="i_image_2"><a href="SliderEkle.aspx"><span>Slider</span></a></li>
+                
+                <li id="li3" runat="server" visible="false" class="i_book"><a><span>Dosyalar</span></a>
+                <ul>
+					<li><a href="DosyaUpload.aspx" title="Dosya Ekle-Çıkar"><span>Içerik Dosya Ekle</span></a></li>
+                  <%--  <li><a href="BrosurEkle.aspx" title="Broşür Ekle-Çıkar"><span>Broşür Ekle</span></a></li>
+                     <li><a href="IndirEkle.aspx" title="Broşür Ekle-Çıkar"><span>İndir Ekle</span></a></li>--%>
+				   </ul>
+                </li>
+               <li id="liebulten" runat="server" visible="false" class="i_list"><a href="EbultenListesi.aspx"><span>E-Bülten</span></a></li>
+               <li id="liiletisim" runat="server" visible="true" class="i_mail"><a href="IletisimEkle.aspx"><span>İletişim Bilgileri</span></a></li>
+                              <li id="lislogan" runat="server" visible="false" class="i_alert"><a href="SloganEkle.aspx"><span>Linkler</span></a></li>
+                <li id="lianket" runat="server" visible="false" class="i_tick"><a><span>Anketler</span></a>
+                <ul>
+					<li><a href="AnketEkle.aspx" title="Anket Ekle-Düzenle"><span>Anket Ekle-Düzenle</span></a></li>
+                    <li><a href="AnketSoruEkle.aspx" title="Anket Soru Ekle-Çıkar"><span>Anket Cevap Ekle</span></a></li>
+				   </ul>
+                </li>
+                
+                 <li id="li2" runat="server" visible="false" class="i_create_write"><a href="SorularListesi.aspx"><span>Sorular Listesi</span></a></li>
+                <li id="liform" runat="server" visible="true" class="i_create_write"><a href="formlar.aspx"><span>Formlar</span></a></li>
+
+               <%--<li id="li2" runat="server" visible="true" class="i_pencil"><a><span>IK</span></a>
+					<ul>
+                        <li><a href="IkListe.aspx"><span>Pozisyon Listesi</span></a></li>
+						<li><a href="IkEkle.aspx"><span>Pozisyon Ekle</span></a></li>
+                        <li><a href="IkFormlar.aspx"><span>Başvurular</span></a></li>
+					</ul>
+				</li>--%>
+                <li id="liayar" runat="server" visible="true" class="i_cog_4"><a href="SiteAyar.aspx"><span>Ayarlar</span></a></li>
+                 <li id="litanimlama" runat="server" visible="false" class="i_book_large"><a><span>Tanımlamalar</span></a>
+					<ul>
+						<li><a href="Secenekler.aspx"><span>Ürün Seçenek Ekle</span></a></li>
+					</ul>
+				</li>
+			</ul>
+            <div style="clear:both"></div>
+		</nav>
+    <section id="content">
+		    <div class="g12 nodrop">
+			    <h1>
+                <div class="g10"><asp:Literal ID="ltMasterBaslik" runat="server"></asp:Literal></div>
+                <div class="g2" style="float:right"><asp:HyperLink ID="hpyeni" CssClass="btn" Visible="false" runat="server"></asp:HyperLink></div>
+                <hr />
+                </h1>
+			   
+		    </div>	
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+		</section>
+    <footer>Copyright by inplus.com.tr 2012</footer>
+    </form>
+</body>
+</html>

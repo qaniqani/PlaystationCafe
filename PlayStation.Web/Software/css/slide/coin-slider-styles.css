@@ -1,0 +1,10 @@
+﻿.coin-slider { overflow: hidden;  position: relative;}
+.coin-slider a{ text-decoration: none; outline: none; border: none;}
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { background-image:url('/../../images/slide-sira.png');background-repeat:no-repeat;width:10px;height:11px;float:left;margin:0 0 0 5px;}
+/*.cs-buttons a { margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px; } */
+.cs-active {background-image:url('/../../images/slide-sira-aktif.png') !important;width:18px !important;height:18px !important;display:block;background-repeat:no-repeat;position:relative;bottom:3px;}
+.cs-title { width: 545px; padding: 10px; background-color: #000000; color: #FFFFFF; }
+.cs-prev{background-image:url('/../../images/slide-geri.png');background-repeat:no-repeat;width:73px;height:28px;display:block;font-size:0; top:359px !important;} 
+.cs-next {background-image:url('/../../images/slide-ileri.png');background-repeat:no-repeat;width:73px;height:28px;display:block;font-size:0; top:359px !important;}
+#cs-navigation-games{display:block !important;}

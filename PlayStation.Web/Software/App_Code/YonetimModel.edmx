@@ -1,0 +1,2485 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="InPlusYonetimModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="InPlusYonetimModelStoreContainer">
+          <EntitySet Name="ADMIN" EntityType="InPlusYonetimModel.Store.ADMIN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ALBUM" EntityType="InPlusYonetimModel.Store.ALBUM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ALBUMILISKI" EntityType="InPlusYonetimModel.Store.ALBUMILISKI" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ALBUMRESIM" EntityType="InPlusYonetimModel.Store.ALBUMRESIM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ANKET" EntityType="InPlusYonetimModel.Store.ANKET" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ANKETCEVAP" EntityType="InPlusYonetimModel.Store.ANKETCEVAP" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="AYAR" EntityType="InPlusYonetimModel.Store.AYAR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DIL" EntityType="InPlusYonetimModel.Store.DIL" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DILKEY" EntityType="InPlusYonetimModel.Store.DILKEY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DILTITLE" EntityType="InPlusYonetimModel.Store.DILTITLE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DOSYAUPLOAD" EntityType="InPlusYonetimModel.Store.DOSYAUPLOAD" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EBULTEN" EntityType="InPlusYonetimModel.Store.EBULTEN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FORM" EntityType="InPlusYonetimModel.Store.FORM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HABERMAKALE" EntityType="InPlusYonetimModel.Store.HABERMAKALE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HABERRESIM" EntityType="InPlusYonetimModel.Store.HABERRESIM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ICERIK" EntityType="InPlusYonetimModel.Store.ICERIK" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ICERIKRESIM" EntityType="InPlusYonetimModel.Store.ICERIKRESIM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IK" EntityType="InPlusYonetimModel.Store.IK" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IKFORMLAR" EntityType="InPlusYonetimModel.Store.IKFORMLAR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ILETISIM" EntityType="InPlusYonetimModel.Store.ILETISIM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="KATEGORI" EntityType="InPlusYonetimModel.Store.KATEGORI" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="LISANSLAMALAR" EntityType="InPlusYonetimModel.Store.LISANSLAMALAR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REKLAM" EntityType="InPlusYonetimModel.Store.REKLAM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="REZERVASYON" EntityType="InPlusYonetimModel.Store.REZERVASYON" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SLIDER" EntityType="InPlusYonetimModel.Store.SLIDER" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SLOGAN" EntityType="InPlusYonetimModel.Store.SLOGAN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TBL_YONLENDIRME" EntityType="InPlusYonetimModel.Store.TBL_YONLENDIRME" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="URUN" EntityType="InPlusYonetimModel.Store.URUN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="URUNDOSYA" EntityType="InPlusYonetimModel.Store.URUNDOSYA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="URUNOZELLIK" EntityType="InPlusYonetimModel.Store.URUNOZELLIK" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="URUNOZELLIKILISKI" EntityType="InPlusYonetimModel.Store.URUNOZELLIKILISKI" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="URUNRESIM" EntityType="InPlusYonetimModel.Store.URUNRESIM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="UYE" EntityType="InPlusYonetimModel.Store.UYE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="YORUM" EntityType="InPlusYonetimModel.Store.YORUM" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VM_MAKALEYORUMSAYISI" EntityType="InPlusYonetimModel.Store.VM_MAKALEYORUMSAYISI" store:Type="Views" store:Schema="dbo" store:Name="VM_MAKALEYORUMSAYISI">
+            <DefiningQuery>SELECT 
+      [VM_MAKALEYORUMSAYISI].[ICERIKID] AS [ICERIKID], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKDIL] AS [ICERIKDIL], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKBASLIK] AS [ICERIKBASLIK], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKDETAY] AS [ICERIKDETAY], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKTITLE] AS [ICERIKTITLE], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKDES] AS [ICERIKDES], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKKEY] AS [ICERIKKEY], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKURL] AS [ICERIKURL], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKSIRA] AS [ICERIKSIRA], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKTARIH] AS [ICERIKTARIH], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKDURUM] AS [ICERIKDURUM], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKKATID] AS [ICERIKKATID], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKOZET] AS [ICERIKOZET], 
+      [VM_MAKALEYORUMSAYISI].[ICERIKOKUNDU] AS [ICERIKOKUNDU], 
+      [VM_MAKALEYORUMSAYISI].[OKUNDU] AS [OKUNDU], 
+      [VM_MAKALEYORUMSAYISI].[RESIM] AS [RESIM]
+      FROM [dbo].[VM_MAKALEYORUMSAYISI] AS [VM_MAKALEYORUMSAYISI]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_HABERRESIM" EntityType="InPlusYonetimModel.Store.VW_HABERRESIM" store:Type="Views" store:Schema="dbo" store:Name="VW_HABERRESIM">
+            <DefiningQuery>SELECT 
+      [VW_HABERRESIM].[HABERID] AS [HABERID], 
+      [VW_HABERRESIM].[HABERTUR] AS [HABERTUR], 
+      [VW_HABERRESIM].[HABERBASLIK] AS [HABERBASLIK], 
+      [VW_HABERRESIM].[HABEROZET] AS [HABEROZET], 
+      [VW_HABERRESIM].[HABERDETAY] AS [HABERDETAY], 
+      [VW_HABERRESIM].[HABERTITLE] AS [HABERTITLE], 
+      [VW_HABERRESIM].[HABERDES] AS [HABERDES], 
+      [VW_HABERRESIM].[HABERKEY] AS [HABERKEY], 
+      [VW_HABERRESIM].[HABERURL] AS [HABERURL], 
+      [VW_HABERRESIM].[HABERTARIH] AS [HABERTARIH], 
+      [VW_HABERRESIM].[HABERSIRA] AS [HABERSIRA], 
+      [VW_HABERRESIM].[HABERDURUM] AS [HABERDURUM], 
+      [VW_HABERRESIM].[HABERDIL] AS [HABERDIL], 
+      [VW_HABERRESIM].[RESIM] AS [RESIM], 
+      [VW_HABERRESIM].[HABERICERIKTUR] AS [HABERICERIKTUR], 
+      [VW_HABERRESIM].[HABERYAZAR] AS [HABERYAZAR]
+      FROM [dbo].[VW_HABERRESIM] AS [VW_HABERRESIM]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_ICERIK" EntityType="InPlusYonetimModel.Store.VW_ICERIK" store:Type="Views" store:Schema="dbo" store:Name="VW_ICERIK">
+            <DefiningQuery>SELECT 
+      [VW_ICERIK].[ICERIKID] AS [ICERIKID], 
+      [VW_ICERIK].[ICERIKDIL] AS [ICERIKDIL], 
+      [VW_ICERIK].[ICERIKBASLIK] AS [ICERIKBASLIK], 
+      [VW_ICERIK].[ICERIKDETAY] AS [ICERIKDETAY], 
+      [VW_ICERIK].[ICERIKTITLE] AS [ICERIKTITLE], 
+      [VW_ICERIK].[ICERIKDES] AS [ICERIKDES], 
+      [VW_ICERIK].[ICERIKKEY] AS [ICERIKKEY], 
+      [VW_ICERIK].[ICERIKURL] AS [ICERIKURL], 
+      [VW_ICERIK].[ICERIKSIRA] AS [ICERIKSIRA], 
+      [VW_ICERIK].[ICERIKTARIH] AS [ICERIKTARIH], 
+      [VW_ICERIK].[ICERIKDURUM] AS [ICERIKDURUM], 
+      [VW_ICERIK].[ICERIKKATID] AS [ICERIKKATID], 
+      [VW_ICERIK].[ICERIKOZET] AS [ICERIKOZET], 
+      [VW_ICERIK].[KATADI] AS [KATADI], 
+      [VW_ICERIK].[KATLOGO] AS [KATLOGO], 
+      [VW_ICERIK].[RESIM] AS [RESIM], 
+      [VW_ICERIK].[KATURL] AS [KATURL], 
+      [VW_ICERIK].[ICERIKRESIM] AS [ICERIKRESIM], 
+      [VW_ICERIK].[ICERIKOKUNDU] AS [ICERIKOKUNDU]
+      FROM [dbo].[VW_ICERIK] AS [VW_ICERIK]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_IK" EntityType="InPlusYonetimModel.Store.VW_IK" store:Type="Views" store:Schema="dbo" store:Name="VW_IK">
+            <DefiningQuery>SELECT 
+      [VW_IK].[BASLIK] AS [BASLIK], 
+      [VW_IK].[ID] AS [ID], 
+      [VW_IK].[KOD] AS [KOD], 
+      [VW_IK].[DETAY] AS [DETAY], 
+      [VW_IK].[DURUM] AS [DURUM], 
+      [VW_IK].[TARIH] AS [TARIH], 
+      [VW_IK].[DEPARTMAN] AS [DEPARTMAN], 
+      [VW_IK].[SIRA] AS [SIRA]
+      FROM [dbo].[VW_IK] AS [VW_IK]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_MAKALE" EntityType="InPlusYonetimModel.Store.VW_MAKALE" store:Type="Views" store:Schema="dbo" store:Name="VW_MAKALE">
+            <DefiningQuery>SELECT 
+      [VW_MAKALE].[ICERIKID] AS [ICERIKID], 
+      [VW_MAKALE].[ICERIKDIL] AS [ICERIKDIL], 
+      [VW_MAKALE].[ICERIKBASLIK] AS [ICERIKBASLIK], 
+      [VW_MAKALE].[ICERIKDETAY] AS [ICERIKDETAY], 
+      [VW_MAKALE].[ICERIKTITLE] AS [ICERIKTITLE], 
+      [VW_MAKALE].[ICERIKDES] AS [ICERIKDES], 
+      [VW_MAKALE].[ICERIKKEY] AS [ICERIKKEY], 
+      [VW_MAKALE].[ICERIKURL] AS [ICERIKURL], 
+      [VW_MAKALE].[ICERIKSIRA] AS [ICERIKSIRA], 
+      [VW_MAKALE].[ICERIKTARIH] AS [ICERIKTARIH], 
+      [VW_MAKALE].[ICERIKDURUM] AS [ICERIKDURUM], 
+      [VW_MAKALE].[ICERIKKATID] AS [ICERIKKATID], 
+      [VW_MAKALE].[ICERIKOZET] AS [ICERIKOZET], 
+      [VW_MAKALE].[KATURL] AS [KATURL], 
+      [VW_MAKALE].[RESIM] AS [RESIM]
+      FROM [dbo].[VW_MAKALE] AS [VW_MAKALE]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_Slogan" EntityType="InPlusYonetimModel.Store.VW_Slogan" store:Type="Views" store:Schema="dbo" store:Name="VW_Slogan">
+            <DefiningQuery>SELECT 
+      [VW_Slogan].[SLOGANID] AS [SLOGANID], 
+      [VW_Slogan].[SLOGANTEXT] AS [SLOGANTEXT], 
+      [VW_Slogan].[SLOGANTARIH] AS [SLOGANTARIH], 
+      [VW_Slogan].[SLOGANDURUM] AS [SLOGANDURUM], 
+      [VW_Slogan].[SLOGANSIRA] AS [SLOGANSIRA], 
+      [VW_Slogan].[SLOGANDIL] AS [SLOGANDIL], 
+      [VW_Slogan].[SLOGANLINK] AS [SLOGANLINK], 
+      [VW_Slogan].[SLOGANRESIM] AS [SLOGANRESIM]
+      FROM [dbo].[VW_Slogan] AS [VW_Slogan]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_URUNDOSYA" EntityType="InPlusYonetimModel.Store.VW_URUNDOSYA" store:Type="Views" store:Schema="dbo" store:Name="VW_URUNDOSYA">
+            <DefiningQuery>SELECT 
+      [VW_URUNDOSYA].[BASLIK] AS [BASLIK], 
+      [VW_URUNDOSYA].[DOSYA] AS [DOSYA], 
+      [VW_URUNDOSYA].[URID] AS [URID], 
+      [VW_URUNDOSYA].[TARIH] AS [TARIH], 
+      [VW_URUNDOSYA].[SIRA] AS [SIRA], 
+      [VW_URUNDOSYA].[DURUM] AS [DURUM], 
+      [VW_URUNDOSYA].[TIP] AS [TIP], 
+      [VW_URUNDOSYA].[DOSID] AS [DOSID], 
+      [VW_URUNDOSYA].[URUNURL] AS [URUNURL]
+      FROM [dbo].[VW_URUNDOSYA] AS [VW_URUNDOSYA]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VW_URUNRESIM" EntityType="InPlusYonetimModel.Store.VW_URUNRESIM" store:Type="Views" store:Schema="dbo" store:Name="VW_URUNRESIM">
+            <DefiningQuery>SELECT 
+      [VW_URUNRESIM].[URUNID] AS [URUNID], 
+      [VW_URUNRESIM].[KATID] AS [KATID], 
+      [VW_URUNRESIM].[URUNADI] AS [URUNADI], 
+      [VW_URUNRESIM].[URUNDETAY] AS [URUNDETAY], 
+      [VW_URUNRESIM].[URUNACIKLAMA] AS [URUNACIKLAMA], 
+      [VW_URUNRESIM].[URUNTITLE] AS [URUNTITLE], 
+      [VW_URUNRESIM].[URUNDESS] AS [URUNDESS], 
+      [VW_URUNRESIM].[URUNKEY] AS [URUNKEY], 
+      [VW_URUNRESIM].[URUNSIRA] AS [URUNSIRA], 
+      [VW_URUNRESIM].[URUNVITRIN] AS [URUNVITRIN], 
+      [VW_URUNRESIM].[TARIH] AS [TARIH], 
+      [VW_URUNRESIM].[URUNDURUM] AS [URUNDURUM], 
+      [VW_URUNRESIM].[URUNDIL] AS [URUNDIL], 
+      [VW_URUNRESIM].[URUNURL] AS [URUNURL], 
+      [VW_URUNRESIM].[URUNOLCU] AS [URUNOLCU], 
+      [VW_URUNRESIM].[URUNANMA] AS [URUNANMA], 
+      [VW_URUNRESIM].[RESIM] AS [RESIM], 
+      [VW_URUNRESIM].[URUNBROSUR] AS [URUNBROSUR], 
+      [VW_URUNRESIM].[URUNCAT] AS [URUNCAT]
+      FROM [dbo].[VW_URUNRESIM] AS [VW_URUNRESIM]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="vw_UrunResimKatResim" EntityType="InPlusYonetimModel.Store.vw_UrunResimKatResim" store:Type="Views" store:Schema="dbo" store:Name="vw_UrunResimKatResim">
+            <DefiningQuery>SELECT 
+      [vw_UrunResimKatResim].[URUNID] AS [URUNID], 
+      [vw_UrunResimKatResim].[KATID] AS [KATID], 
+      [vw_UrunResimKatResim].[URUNADI] AS [URUNADI], 
+      [vw_UrunResimKatResim].[URUNDETAY] AS [URUNDETAY], 
+      [vw_UrunResimKatResim].[URUNACIKLAMA] AS [URUNACIKLAMA], 
+      [vw_UrunResimKatResim].[URUNTITLE] AS [URUNTITLE], 
+      [vw_UrunResimKatResim].[URUNDESS] AS [URUNDESS], 
+      [vw_UrunResimKatResim].[URUNKEY] AS [URUNKEY], 
+      [vw_UrunResimKatResim].[URUNSIRA] AS [URUNSIRA], 
+      [vw_UrunResimKatResim].[URUNVITRIN] AS [URUNVITRIN], 
+      [vw_UrunResimKatResim].[TARIH] AS [TARIH], 
+      [vw_UrunResimKatResim].[URUNDURUM] AS [URUNDURUM], 
+      [vw_UrunResimKatResim].[URUNDIL] AS [URUNDIL], 
+      [vw_UrunResimKatResim].[URUNURL] AS [URUNURL], 
+      [vw_UrunResimKatResim].[URUNOLCU] AS [URUNOLCU], 
+      [vw_UrunResimKatResim].[URUNANMA] AS [URUNANMA], 
+      [vw_UrunResimKatResim].[RESIM] AS [RESIM], 
+      [vw_UrunResimKatResim].[KATURL] AS [KATURL], 
+      [vw_UrunResimKatResim].[KATADI] AS [KATADI], 
+      [vw_UrunResimKatResim].[KATLOGO] AS [KATLOGO]
+      FROM [dbo].[vw_UrunResimKatResim] AS [vw_UrunResimKatResim]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="ADMINID" />
+          </Key>
+          <Property Name="ADMINID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ADMINADI" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADMINKULLANICI" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADMINPAROLA" Type="nvarchar" MaxLength="50" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ALBUM">
+          <Key>
+            <PropertyRef Name="ALBUMID" />
+          </Key>
+          <Property Name="ALBUMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ALBUMDIL" Type="int" />
+          <Property Name="ALBUMBASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="ALBUMLOGO" Type="nvarchar" MaxLength="150" />
+          <Property Name="ALBUMSIRA" Type="int" />
+          <Property Name="ALBUMTARIH" Type="datetime" />
+          <Property Name="ALBUMDURUM" Type="bit" />
+          <Property Name="ALBUMURL" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="ALBUMILISKI">
+          <Key>
+            <PropertyRef Name="BAGID" />
+          </Key>
+          <Property Name="BAGID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KATID" Type="int" />
+          <Property Name="ICERIKID" Type="int" />
+          <Property Name="ALBUMID" Type="int" />
+          <Property Name="GALERIID" Type="int" />
+          <Property Name="HABERID" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="SIRA" Type="int" />
+        </EntityType>
+        <EntityType Name="ALBUMRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Name="RESID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="RESDIL" Type="int" />
+          <Property Name="RESYOL" Type="nvarchar" MaxLength="250" />
+          <Property Name="RESSIRA" Type="int" />
+          <Property Name="RESTARIH" Type="datetime" />
+          <Property Name="RESDURUM" Type="bit" />
+          <Property Name="ALBUMID" Type="int" />
+          <Property Name="RESIMURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="RESBASLIK" Type="nvarchar" MaxLength="250" />
+          <Property Name="RESICERIK" Type="ntext" />
+        </EntityType>
+        <EntityType Name="ANKET">
+          <Key>
+            <PropertyRef Name="ANKETID" />
+          </Key>
+          <Property Name="ANKETID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ANKETSORU" Type="nvarchar" MaxLength="350" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="DIL" Type="int" />
+        </EntityType>
+        <EntityType Name="ANKETCEVAP">
+          <Key>
+            <PropertyRef Name="CEVAPID" />
+          </Key>
+          <Property Name="CEVAPID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CEVAPSORUID" Type="int" />
+          <Property Name="CEVAP" Type="nvarchar" MaxLength="50" />
+          <Property Name="CEVAPSIRA" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="CEVAPSAY" Type="int" />
+        </EntityType>
+        <EntityType Name="AYAR">
+          <Key>
+            <PropertyRef Name="AYARID" />
+          </Key>
+          <Property Name="AYARID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ANASAYFATITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="ANASAYFADES" Type="nvarchar" MaxLength="150" />
+          <Property Name="ANASAYFAKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="ANALYTICSKODU" Type="ntext" />
+          <Property Name="DEFAULTDIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPOSTA" Type="nvarchar" MaxLength="150" />
+          <Property Name="EPOSTAPAROLA" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPOSTASMTP" Type="nvarchar" MaxLength="150" />
+          <Property Name="EPOSTAPORT" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DURUM" Type="bit" Nullable="false" />
+          <Property Name="DIL" Type="int" />
+        </EntityType>
+        <EntityType Name="DIL">
+          <Key>
+            <PropertyRef Name="DILID" />
+          </Key>
+          <Property Name="DILID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DILAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DILTUR" Type="nvarchar" MaxLength="50" />
+          <Property Name="Durum" Type="bit" />
+        </EntityType>
+        <EntityType Name="DILKEY">
+          <Key>
+            <PropertyRef Name="KEYID" />
+          </Key>
+          <Property Name="KEYID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KEYNAME" Type="nvarchar" MaxLength="150" />
+          <Property Name="DURUM" Type="bit" />
+        </EntityType>
+        <EntityType Name="DILTITLE">
+          <Key>
+            <PropertyRef Name="DILTITLEID" />
+          </Key>
+          <Property Name="DILTITLEID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DILID" Type="int" />
+          <Property Name="DILKEYID" Type="int" />
+          <Property Name="DILKEYTITLE" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="DOSYAUPLOAD">
+          <Key>
+            <PropertyRef Name="DOSYAID" />
+          </Key>
+          <Property Name="DOSYAID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DOSYAADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="DOSYAYOLU" Type="nvarchar" MaxLength="250" />
+          <Property Name="DIL" Type="int" />
+          <Property Name="DOSYATUR" Type="int" />
+        </EntityType>
+        <EntityType Name="EBULTEN">
+          <Key>
+            <PropertyRef Name="BULTENID" />
+          </Key>
+          <Property Name="BULTENID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BULTENEPOSTA" Type="nvarchar" MaxLength="150" />
+          <Property Name="BULTENGSM" Type="nvarchar" MaxLength="50" />
+          <Property Name="BULTENTARIH" Type="datetime" />
+          <Property Name="BULTENDURUM" Type="bit" />
+          <Property Name="BULTENONAY" Type="bit" />
+        </EntityType>
+        <EntityType Name="FORM">
+          <Key>
+            <PropertyRef Name="FORMID" />
+          </Key>
+          <Property Name="FORMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FORMTUR" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMUYEID" Type="int" />
+          <Property Name="FORMADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="FORMSOYADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="FORMADRES" Type="nvarchar" MaxLength="350" />
+          <Property Name="FORMMAIL" Type="nvarchar" MaxLength="150" />
+          <Property Name="FORMTEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMGSM" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMKONU" Type="nvarchar" MaxLength="150" />
+          <Property Name="FORMMESAJ" Type="nvarchar" MaxLength="350" />
+          <Property Name="FORMTARIH" Type="datetime" />
+          <Property Name="FORMIP" Type="nvarchar" MaxLength="150" />
+          <Property Name="FORMDURUM" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMYAYIN" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMFIRMA" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMPOSTAKODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMSEHIR" Type="nvarchar" MaxLength="50" />
+          <Property Name="FORMKISITUR" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="HABERMAKALE">
+          <Key>
+            <PropertyRef Name="HABERID" />
+          </Key>
+          <Property Name="HABERID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HABERTUR" Type="nvarchar" MaxLength="50" />
+          <Property Name="HABERBASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABEROZET" Type="nvarchar" MaxLength="350" />
+          <Property Name="HABERDETAY" Type="ntext" />
+          <Property Name="HABERRESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERDES" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="HABERTARIH" Type="datetime" />
+          <Property Name="HABERSIRA" Type="int" />
+          <Property Name="HABERDURUM" Type="bit" />
+          <Property Name="HABERDIL" Type="int" />
+          <Property Name="HABERICERIKTUR" Type="int" />
+          <Property Name="HABERYAZAR" Type="nvarchar" MaxLength="50" />
+          <Property Name="HABERIFRAME" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="HABERRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Name="RESID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="URID" Type="int" />
+          <Property Name="RESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TEMSIL" Type="bit" />
+        </EntityType>
+        <EntityType Name="ICERIK">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+          </Key>
+          <Property Name="ICERIKID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ICERIKDIL" Type="int" />
+          <Property Name="ICERIKBASLIK" Type="nvarchar(max)" />
+          <Property Name="ICERIKDETAY" Type="ntext" />
+          <Property Name="ICERIKTITLE" Type="nvarchar(max)" />
+          <Property Name="ICERIKDES" Type="nvarchar(max)" />
+          <Property Name="ICERIKKEY" Type="nvarchar(max)" />
+          <Property Name="ICERIKURL" Type="nvarchar(max)" />
+          <Property Name="ICERIKSIRA" Type="int" />
+          <Property Name="ICERIKTARIH" Type="datetime" />
+          <Property Name="ICERIKDURUM" Type="bit" />
+          <Property Name="ICERIKKATID" Type="int" />
+          <Property Name="ICERIKOZET" Type="nvarchar(max)" />
+          <Property Name="ICERIKOKUNDU" Type="int" />
+          <Property Name="ICERIKRESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="ICERIKDOSYA" Type="nvarchar(max)" />
+          <Property Name="ICERIKALTBASLIK" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ICERIKRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Name="RESID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ICERIKID" Type="int" />
+          <Property Name="RESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TEMSIL" Type="bit" />
+        </EntityType>
+        <EntityType Name="IK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DETAY" Type="ntext" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DEPARTMAN" Type="nvarchar" MaxLength="150" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DIL" Type="int" />
+        </EntityType>
+        <EntityType Name="IKFORMLAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ADSOYAD" Type="nvarchar" MaxLength="150" />
+          <Property Name="DOGTARIH" Type="nvarchar" MaxLength="50" />
+          <Property Name="EPOSTA" Type="nvarchar" MaxLength="150" />
+          <Property Name="EGITIMBILGI" Type="ntext" />
+          <Property Name="IKREFERANS" Type="nvarchar" MaxLength="50" />
+          <Property Name="DOSYA" Type="nvarchar" MaxLength="150" />
+          <Property Name="TEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+        </EntityType>
+        <EntityType Name="ILETISIM">
+          <Key>
+            <PropertyRef Name="ILETISIMID" />
+          </Key>
+          <Property Name="ILETISIMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="DILID" Type="int" />
+          <Property Name="ADRES" Type="nvarchar" MaxLength="350" />
+          <Property Name="TEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="GSM" Type="nvarchar" MaxLength="50" />
+          <Property Name="LOGO" Type="nvarchar" MaxLength="150" />
+          <Property Name="BASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="FAKS" Type="nvarchar" MaxLength="50" />
+          <Property Name="MAPS" Type="ntext" />
+          <Property Name="TEL2" Type="nvarchar" MaxLength="50" />
+          <Property Name="GSM2" Type="nvarchar" MaxLength="50" />
+          <Property Name="EMAIL" Type="nvarchar" MaxLength="150" />
+          <Property Name="LINK" Type="nvarchar" MaxLength="250" />
+          <Property Name="MAPSDURUM" Type="bit" />
+          <Property Name="TWITTER" Type="nvarchar" MaxLength="500" />
+          <Property Name="FACEBOOK" Type="nvarchar" MaxLength="500" />
+          <Property Name="GOOGLE" Type="nvarchar" MaxLength="500" />
+          <Property Name="LINKEDIN" Type="nvarchar" MaxLength="500" />
+          <Property Name="YENIBIRIS" Type="nvarchar" MaxLength="500" />
+          <Property Name="FOURSQUARE" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="KATEGORI">
+          <Key>
+            <PropertyRef Name="KATID" />
+          </Key>
+          <Property Name="KATID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KATUSTID" Type="int" />
+          <Property Name="KATDIL" Type="int" />
+          <Property Name="KATADI" Type="nvarchar" MaxLength="100" />
+          <Property Name="KATOZET" Type="ntext" />
+          <Property Name="KATLOGO" Type="nvarchar" MaxLength="150" />
+          <Property Name="KATTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="KATDES" Type="nvarchar" MaxLength="150" />
+          <Property Name="KATKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="KATURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="KATSIRA" Type="int" />
+          <Property Name="KATTARIH" Type="datetime" />
+          <Property Name="KATDURUM" Type="bit" />
+          <Property Name="KATTUR" Type="int" />
+          <Property Name="KATDEGIS" Type="int" />
+        </EntityType>
+        <EntityType Name="LISANSLAMALAR">
+          <Key>
+            <PropertyRef Name="FIRID" />
+          </Key>
+          <Property Name="FIRID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FIRADSOYAD" Type="nvarchar" MaxLength="150" />
+          <Property Name="FIRDOGUMTARIHI" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIREMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRGSMNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRFIRMAADI" Type="nvarchar" MaxLength="250" />
+          <Property Name="FIRIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRILCE" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRADRES" Type="nvarchar" MaxLength="500" />
+          <Property Name="FIRVERGIDAIRESI" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRVERGINO" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRLISANSKEY" Type="nvarchar" MaxLength="50" />
+          <Property Name="FIRKULLANICISAYISI" Type="int" />
+          <Property Name="FIRLISANSBASTARIH" Type="datetime" />
+          <Property Name="FIRLISANSBITTARIH" Type="datetime" />
+          <Property Name="FIRGUNCELLEMESIKLIGI" Type="int" />
+          <Property Name="FIRBOARDSERIALNO" Type="nvarchar" MaxLength="150" />
+          <Property Name="FIRCPUSERIALNO" Type="nvarchar" MaxLength="150" />
+          <Property Name="FIRHDDSERIALNO" Type="nvarchar" MaxLength="150" />
+          <Property Name="FIRDEMOMU" Type="bit" />
+          <Property Name="FIRAKTIF" Type="bit" />
+          <Property Name="FIRKAYITTARIHI" Type="datetime" />
+        </EntityType>
+        <EntityType Name="REKLAM">
+          <Key>
+            <PropertyRef Name="REKID" />
+          </Key>
+          <Property Name="REKID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="REKADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="REKTIPI" Type="nvarchar" MaxLength="50" />
+          <Property Name="REKYOLU" Type="nvarchar" MaxLength="500" />
+          <Property Name="REKLINK" Type="nvarchar" MaxLength="1500" />
+          <Property Name="REKKODU" Type="nvarchar" MaxLength="500" />
+          <Property Name="REKHIT" Type="int" />
+          <Property Name="REKTIK" Type="int" />
+          <Property Name="REKGUID" Type="nvarchar" MaxLength="50" />
+          <Property Name="REKAKTIF" Type="bit" />
+        </EntityType>
+        <EntityType Name="REZERVASYON">
+          <Key>
+            <PropertyRef Name="REZERVASYONID" />
+          </Key>
+          <Property Name="REZERVASYONID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="REZERVASYONADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="REZERVASYONTEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="REZERVASYONMAIL" Type="nvarchar" MaxLength="150" />
+          <Property Name="REZERVASYONTARIH" Type="datetime" />
+          <Property Name="REZERVASYONKISI" Type="int" />
+          <Property Name="REZERVASYONDURUM" Type="bit" />
+        </EntityType>
+        <EntityType Name="SLIDER">
+          <Key>
+            <PropertyRef Name="SLIDERID" />
+          </Key>
+          <Property Name="SLIDERID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SLIDERBASLIK" Type="nvarchar(max)" />
+          <Property Name="SLIDERSLOGAN" Type="nvarchar(max)" />
+          <Property Name="SLIDEROZET" Type="nvarchar(max)" />
+          <Property Name="SLIDERRESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="SLIDERLINK" Type="nvarchar" MaxLength="250" />
+          <Property Name="SLIDERTUR" Type="nvarchar" MaxLength="50" />
+          <Property Name="SLIDERSIRA" Type="int" />
+          <Property Name="SLIDERTARIH" Type="datetime" />
+          <Property Name="SLIDERDURUM" Type="bit" />
+          <Property Name="SLIDERDIL" Type="int" />
+        </EntityType>
+        <EntityType Name="SLOGAN">
+          <Key>
+            <PropertyRef Name="SLOGANID" />
+          </Key>
+          <Property Name="SLOGANID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SLOGANTEXT" Type="nvarchar(max)" />
+          <Property Name="SLOGANTARIH" Type="datetime" />
+          <Property Name="SLOGANDURUM" Type="bit" />
+          <Property Name="SLOGANSIRA" Type="int" />
+          <Property Name="SLOGANDIL" Type="int" />
+          <Property Name="SLOGANLINK" Type="nvarchar" MaxLength="250" />
+          <Property Name="SLOGANRESIM" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="TBL_YONLENDIRME">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EskiUrl" Type="nvarchar(max)" />
+          <Property Name="YeniUrl" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="URUN">
+          <Key>
+            <PropertyRef Name="URUNID" />
+          </Key>
+          <Property Name="URUNID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KATID" Type="int" />
+          <Property Name="URUNADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDETAY" Type="ntext" />
+          <Property Name="URUNACIKLAMA" Type="nvarchar" MaxLength="350" />
+          <Property Name="URUNTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDESS" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNSIRA" Type="int" />
+          <Property Name="URUNVITRIN" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDIL" Type="int" />
+          <Property Name="URUNURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="URUNOLCU" Type="nvarchar" MaxLength="450" />
+          <Property Name="URUNANMA" Type="nvarchar" MaxLength="450" />
+          <Property Name="URUNCAT" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNBROSUR" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNRESIM" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="URUNDOSYA">
+          <Key>
+            <PropertyRef Name="DOSID" />
+          </Key>
+          <Property Name="DOSID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="URID" Type="int" />
+          <Property Name="BASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="DOSYA" Type="nvarchar" MaxLength="150" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TIP" Type="int" />
+        </EntityType>
+        <EntityType Name="URUNOZELLIK">
+          <Key>
+            <PropertyRef Name="OZELLIKID" />
+          </Key>
+          <Property Name="OZELLIKID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="OZELLIKUSTID" Type="int" />
+          <Property Name="OZELLIKBASLIK" Type="ntext" />
+          <Property Name="OZELLIKDURUM" Type="bit" />
+          <Property Name="OZELLIKTARIH" Type="datetime" />
+          <Property Name="OZELLIKSIRA" Type="int" />
+          <Property Name="OZELLIKDIL" Type="int" />
+        </EntityType>
+        <EntityType Name="URUNOZELLIKILISKI">
+          <Key>
+            <PropertyRef Name="ILISKIID" />
+          </Key>
+          <Property Name="ILISKIID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="URUNID" Type="int" />
+          <Property Name="OZELLIKID" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+        </EntityType>
+        <EntityType Name="URUNRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Name="RESID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="URID" Type="int" />
+          <Property Name="RESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TEMSIL" Type="bit" />
+          <Property Name="TIP" Type="int" />
+        </EntityType>
+        <EntityType Name="UYE">
+          <Key>
+            <PropertyRef Name="UYEID" />
+          </Key>
+          <Property Name="UYEID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UYEAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYESOYAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYETEL" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEGSM" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEMAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEPAROLA" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYESONGIRIS" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEAKTIVASYONKOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEAKTIVASYONDURUM" Type="bit" />
+          <Property Name="UYESOZLESMEDURUM" Type="bit" />
+          <Property Name="UYETARIH" Type="datetime" />
+          <Property Name="UYEDURUM" Type="bit" />
+          <Property Name="UYEIP" Type="nvarchar" MaxLength="50" />
+          <Property Name="UYEADRES" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="YORUM">
+          <Key>
+            <PropertyRef Name="YORUMID" />
+          </Key>
+          <Property Name="YORUMID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UYEID" Type="int" />
+          <Property Name="YORUMICERIKID" Type="int" />
+          <Property Name="YORUMBASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="YORUMDETAY" Type="ntext" />
+          <Property Name="YORUMURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="YORUMTARIH" Type="datetime" />
+          <Property Name="YORUMIP" Type="nvarchar" MaxLength="50" />
+          <Property Name="YORUMDURUM" Type="int" />
+          <Property Name="YORUMDIL" Type="int" />
+          <Property Name="YORUMCEVAPDURUM" Type="bit" />
+          <Property Name="YORUMCEVAP" Type="ntext" />
+          <Property Name="YORUMCEVAPTARIH" Type="datetime" />
+          <Property Name="YORUMEMAIL" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VM_MAKALEYORUMSAYISI' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VM_MAKALEYORUMSAYISI">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="OKUNDU" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="ICERIKID" Type="int" Nullable="false" />
+          <Property Name="ICERIKDIL" Type="int" />
+          <Property Name="ICERIKBASLIK" Type="nvarchar(max)" />
+          <Property Name="ICERIKDETAY" Type="ntext" />
+          <Property Name="ICERIKTITLE" Type="nvarchar(max)" />
+          <Property Name="ICERIKDES" Type="nvarchar(max)" />
+          <Property Name="ICERIKKEY" Type="nvarchar(max)" />
+          <Property Name="ICERIKURL" Type="nvarchar(max)" />
+          <Property Name="ICERIKSIRA" Type="int" />
+          <Property Name="ICERIKTARIH" Type="datetime" />
+          <Property Name="ICERIKDURUM" Type="bit" />
+          <Property Name="ICERIKKATID" Type="int" />
+          <Property Name="ICERIKOZET" Type="nvarchar(max)" />
+          <Property Name="ICERIKOKUNDU" Type="int" />
+          <Property Name="OKUNDU" Type="int" Nullable="false" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_HABERRESIM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_HABERRESIM">
+          <Key>
+            <PropertyRef Name="HABERID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="HABERID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HABERTUR" Type="nvarchar" MaxLength="50" />
+          <Property Name="HABERBASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABEROZET" Type="nvarchar" MaxLength="350" />
+          <Property Name="HABERDETAY" Type="ntext" />
+          <Property Name="HABERTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERDES" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="HABERURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="HABERTARIH" Type="datetime" />
+          <Property Name="HABERSIRA" Type="int" />
+          <Property Name="HABERDURUM" Type="bit" />
+          <Property Name="HABERDIL" Type="int" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="HABERICERIKTUR" Type="int" />
+          <Property Name="HABERYAZAR" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_ICERIK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_ICERIK">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="ICERIKID" Type="int" Nullable="false" />
+          <Property Name="ICERIKDIL" Type="int" />
+          <Property Name="ICERIKBASLIK" Type="nvarchar(max)" />
+          <Property Name="ICERIKDETAY" Type="ntext" />
+          <Property Name="ICERIKTITLE" Type="nvarchar(max)" />
+          <Property Name="ICERIKDES" Type="nvarchar(max)" />
+          <Property Name="ICERIKKEY" Type="nvarchar(max)" />
+          <Property Name="ICERIKURL" Type="nvarchar(max)" />
+          <Property Name="ICERIKSIRA" Type="int" />
+          <Property Name="ICERIKTARIH" Type="datetime" />
+          <Property Name="ICERIKDURUM" Type="bit" />
+          <Property Name="ICERIKKATID" Type="int" />
+          <Property Name="ICERIKOZET" Type="nvarchar(max)" />
+          <Property Name="KATADI" Type="nvarchar" MaxLength="100" />
+          <Property Name="KATLOGO" Type="nvarchar" MaxLength="150" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="KATURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="ICERIKRESIM" Type="nvarchar" MaxLength="150" />
+          <Property Name="ICERIKOKUNDU" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_IK' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_IK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="BASLIK" Type="nvarchar" MaxLength="201" />
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DETAY" Type="ntext" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="DEPARTMAN" Type="nvarchar" MaxLength="150" />
+          <Property Name="SIRA" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_MAKALE' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_MAKALE">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="ICERIKID" Type="int" Nullable="false" />
+          <Property Name="ICERIKDIL" Type="int" />
+          <Property Name="ICERIKBASLIK" Type="nvarchar(max)" />
+          <Property Name="ICERIKDETAY" Type="ntext" />
+          <Property Name="ICERIKTITLE" Type="nvarchar(max)" />
+          <Property Name="ICERIKDES" Type="nvarchar(max)" />
+          <Property Name="ICERIKKEY" Type="nvarchar(max)" />
+          <Property Name="ICERIKURL" Type="nvarchar(max)" />
+          <Property Name="ICERIKSIRA" Type="int" />
+          <Property Name="ICERIKTARIH" Type="datetime" />
+          <Property Name="ICERIKDURUM" Type="bit" />
+          <Property Name="ICERIKKATID" Type="int" />
+          <Property Name="ICERIKOZET" Type="nvarchar(max)" />
+          <Property Name="KATURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_Slogan' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_Slogan">
+          <Key>
+            <PropertyRef Name="SLOGANID" />
+          </Key>
+          <Property Name="SLOGANID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SLOGANTEXT" Type="nvarchar(max)" />
+          <Property Name="SLOGANTARIH" Type="datetime" />
+          <Property Name="SLOGANDURUM" Type="bit" />
+          <Property Name="SLOGANSIRA" Type="int" />
+          <Property Name="SLOGANDIL" Type="int" />
+          <Property Name="SLOGANLINK" Type="nvarchar" MaxLength="250" />
+          <Property Name="SLOGANRESIM" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_URUNDOSYA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_URUNDOSYA">
+          <Key>
+            <PropertyRef Name="DOSID" />
+          </Key>
+          <Property Name="BASLIK" Type="nvarchar" MaxLength="150" />
+          <Property Name="DOSYA" Type="nvarchar" MaxLength="150" />
+          <Property Name="URID" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="DURUM" Type="bit" />
+          <Property Name="TIP" Type="int" />
+          <Property Name="DOSID" Type="int" Nullable="false" />
+          <Property Name="URUNURL" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.VW_URUNRESIM' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="VW_URUNRESIM">
+          <Key>
+            <PropertyRef Name="URUNID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="URUNID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="KATID" Type="int" />
+          <Property Name="URUNADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDETAY" Type="ntext" />
+          <Property Name="URUNACIKLAMA" Type="nvarchar" MaxLength="350" />
+          <Property Name="URUNTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDESS" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNSIRA" Type="int" />
+          <Property Name="URUNVITRIN" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDIL" Type="int" />
+          <Property Name="URUNURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="URUNOLCU" Type="nvarchar" MaxLength="450" />
+          <Property Name="URUNANMA" Type="nvarchar" MaxLength="450" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="URUNBROSUR" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNCAT" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'NVISIONDB.dbo.vw_UrunResimKatResim' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="vw_UrunResimKatResim">
+          <Key>
+            <PropertyRef Name="URUNID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Name="URUNID" Type="int" Nullable="false" />
+          <Property Name="KATID" Type="int" />
+          <Property Name="URUNADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDETAY" Type="ntext" />
+          <Property Name="URUNACIKLAMA" Type="nvarchar" MaxLength="350" />
+          <Property Name="URUNTITLE" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNDESS" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNKEY" Type="nvarchar" MaxLength="150" />
+          <Property Name="URUNSIRA" Type="int" />
+          <Property Name="URUNVITRIN" Type="bit" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="URUNDURUM" Type="bit" />
+          <Property Name="URUNDIL" Type="int" />
+          <Property Name="URUNURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="URUNOLCU" Type="nvarchar" MaxLength="450" />
+          <Property Name="URUNANMA" Type="nvarchar" MaxLength="450" />
+          <Property Name="RESIM" Type="nvarchar" Nullable="false" MaxLength="150" />
+          <Property Name="KATURL" Type="nvarchar" MaxLength="250" />
+          <Property Name="KATADI" Type="nvarchar" MaxLength="100" />
+          <Property Name="KATLOGO" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <Function Name="sp_DilTitleSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="DILID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Sp_OzellikGetir" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="URUNID" Type="int" Mode="In" />
+          <Parameter Name="OZELLIKUSTID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_UrunOzellikSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="URUNID" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="InPlusYonetimModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="YonetimEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="sp_UrunOzellikSil">
+          <Parameter Name="URUNID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="DilTitleSil">
+          <Parameter Name="DILID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Sp_OzellikGetir">
+            <Parameter Name="URUNID" Mode="In" Type="Int32" />
+            <Parameter Name="OZELLIKUSTID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="REZERVASYONs" EntityType="InPlusYonetimModel.REZERVASYON" />
+          <EntitySet Name="ADMINs" EntityType="InPlusYonetimModel.ADMIN" />
+          <EntitySet Name="ALBUMs" EntityType="InPlusYonetimModel.ALBUM" />
+          <EntitySet Name="ALBUMILISKIs" EntityType="InPlusYonetimModel.ALBUMILISKI" />
+          <EntitySet Name="ALBUMRESIMs" EntityType="InPlusYonetimModel.ALBUMRESIM" />
+          <EntitySet Name="ANKETs" EntityType="InPlusYonetimModel.ANKET" />
+          <EntitySet Name="ANKETCEVAPs" EntityType="InPlusYonetimModel.ANKETCEVAP" />
+          <EntitySet Name="AYARs" EntityType="InPlusYonetimModel.AYAR" />
+          <EntitySet Name="DILs" EntityType="InPlusYonetimModel.DIL" />
+          <EntitySet Name="DILKEYs" EntityType="InPlusYonetimModel.DILKEY" />
+          <EntitySet Name="DILTITLEs" EntityType="InPlusYonetimModel.DILTITLE" />
+          <EntitySet Name="DOSYAUPLOADs" EntityType="InPlusYonetimModel.DOSYAUPLOAD" />
+          <EntitySet Name="EBULTENs" EntityType="InPlusYonetimModel.EBULTEN" />
+          <EntitySet Name="FORMs" EntityType="InPlusYonetimModel.FORM" />
+          <EntitySet Name="HABERMAKALEs" EntityType="InPlusYonetimModel.HABERMAKALE" />
+          <EntitySet Name="HABERRESIMs" EntityType="InPlusYonetimModel.HABERRESIM" />
+          <EntitySet Name="ICERIKs" EntityType="InPlusYonetimModel.ICERIK" />
+          <EntitySet Name="ICERIKRESIMs" EntityType="InPlusYonetimModel.ICERIKRESIM" />
+          <EntitySet Name="IKs" EntityType="InPlusYonetimModel.IK" />
+          <EntitySet Name="IKFORMLARs" EntityType="InPlusYonetimModel.IKFORMLAR" />
+          <EntitySet Name="ILETISIMs" EntityType="InPlusYonetimModel.ILETISIM" />
+          <EntitySet Name="KATEGORIs" EntityType="InPlusYonetimModel.KATEGORI" />
+          <EntitySet Name="SLIDERs" EntityType="InPlusYonetimModel.SLIDER" />
+          <EntitySet Name="SLOGANs" EntityType="InPlusYonetimModel.SLOGAN" />
+          <EntitySet Name="TBL_YONLENDIRME" EntityType="InPlusYonetimModel.TBL_YONLENDIRME" />
+          <EntitySet Name="URUNs" EntityType="InPlusYonetimModel.URUN" />
+          <EntitySet Name="URUNDOSYAs" EntityType="InPlusYonetimModel.URUNDOSYA" />
+          <EntitySet Name="URUNOZELLIKs" EntityType="InPlusYonetimModel.URUNOZELLIK" />
+          <EntitySet Name="URUNOZELLIKILISKIs" EntityType="InPlusYonetimModel.URUNOZELLIKILISKI" />
+          <EntitySet Name="URUNRESIMs" EntityType="InPlusYonetimModel.URUNRESIM" />
+          <EntitySet Name="UYEs" EntityType="InPlusYonetimModel.UYE" />
+          <EntitySet Name="YORUMs" EntityType="InPlusYonetimModel.YORUM" />
+          <EntitySet Name="VM_MAKALEYORUMSAYISI" EntityType="InPlusYonetimModel.VM_MAKALEYORUMSAYISI" />
+          <EntitySet Name="VW_HABERRESIM" EntityType="InPlusYonetimModel.VW_HABERRESIM" />
+          <EntitySet Name="VW_ICERIK" EntityType="InPlusYonetimModel.VW_ICERIK" />
+          <EntitySet Name="VW_IK" EntityType="InPlusYonetimModel.VW_IK" />
+          <EntitySet Name="VW_MAKALE" EntityType="InPlusYonetimModel.VW_MAKALE" />
+          <EntitySet Name="VW_Slogan" EntityType="InPlusYonetimModel.VW_Slogan" />
+          <EntitySet Name="VW_URUNDOSYA" EntityType="InPlusYonetimModel.VW_URUNDOSYA" />
+          <EntitySet Name="VW_URUNRESIM" EntityType="InPlusYonetimModel.VW_URUNRESIM" />
+          <EntitySet Name="vw_UrunResimKatResim" EntityType="InPlusYonetimModel.vw_UrunResimKatResim" />
+          <EntitySet Name="LISANSLAMALARs" EntityType="InPlusYonetimModel.LISANSLAMALAR" />
+          <EntitySet Name="REKLAMs" EntityType="InPlusYonetimModel.REKLAM" />
+        </EntityContainer>
+        <EntityType Name="REZERVASYON">
+          <Key>
+            <PropertyRef Name="REZERVASYONID" />
+          </Key>
+          <Property Type="Int32" Name="REZERVASYONID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="REZERVASYONADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REZERVASYONTEL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REZERVASYONMAIL" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="REZERVASYONTARIH" Precision="3" />
+          <Property Type="Int32" Name="REZERVASYONKISI" />
+          <Property Type="Boolean" Name="REZERVASYONDURUM" />
+        </EntityType>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="ADMINID" />
+          </Key>
+          <Property Type="Int32" Name="ADMINID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ADMINADI" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADMINKULLANICI" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ADMINPAROLA" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+        </EntityType>
+        <EntityType Name="ALBUM">
+          <Key>
+            <PropertyRef Name="ALBUMID" />
+          </Key>
+          <Property Type="Int32" Name="ALBUMID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ALBUMDIL" />
+          <Property Type="String" Name="ALBUMBASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ALBUMLOGO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ALBUMSIRA" />
+          <Property Type="DateTime" Name="ALBUMTARIH" Precision="3" />
+          <Property Type="Boolean" Name="ALBUMDURUM" />
+          <Property Type="String" Name="ALBUMURL" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ALBUMILISKI">
+          <Key>
+            <PropertyRef Name="BAGID" />
+          </Key>
+          <Property Type="Int32" Name="BAGID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="KATID" />
+          <Property Type="Int32" Name="ICERIKID" />
+          <Property Type="Int32" Name="ALBUMID" />
+          <Property Type="Int32" Name="GALERIID" />
+          <Property Type="Int32" Name="HABERID" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Int32" Name="SIRA" />
+        </EntityType>
+        <EntityType Name="ALBUMRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Type="Int32" Name="RESID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="RESDIL" />
+          <Property Type="String" Name="RESYOL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="RESSIRA" />
+          <Property Type="DateTime" Name="RESTARIH" Precision="3" />
+          <Property Type="Boolean" Name="RESDURUM" />
+          <Property Type="Int32" Name="ALBUMID" />
+          <Property Type="String" Name="RESIMURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESBASLIK" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESICERIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ANKET">
+          <Key>
+            <PropertyRef Name="ANKETID" />
+          </Key>
+          <Property Type="Int32" Name="ANKETID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ANKETSORU" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Int32" Name="DIL" />
+        </EntityType>
+        <EntityType Name="ANKETCEVAP">
+          <Key>
+            <PropertyRef Name="CEVAPID" />
+          </Key>
+          <Property Type="Int32" Name="CEVAPID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CEVAPSORUID" />
+          <Property Type="String" Name="CEVAP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="CEVAPSIRA" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Int32" Name="CEVAPSAY" />
+        </EntityType>
+        <EntityType Name="AYAR">
+          <Key>
+            <PropertyRef Name="AYARID" />
+          </Key>
+          <Property Type="Int32" Name="AYARID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ANASAYFATITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ANASAYFADES" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ANASAYFAKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ANALYTICSKODU" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DEFAULTDIL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EPOSTA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EPOSTAPAROLA" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EPOSTASMTP" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EPOSTAPORT" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="DURUM" Nullable="false" />
+          <Property Type="Int32" Name="DIL" />
+        </EntityType>
+        <EntityType Name="DIL">
+          <Key>
+            <PropertyRef Name="DILID" />
+          </Key>
+          <Property Type="Int32" Name="DILID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="DILAD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DILTUR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Durum" />
+        </EntityType>
+        <EntityType Name="DILKEY">
+          <Key>
+            <PropertyRef Name="KEYID" />
+          </Key>
+          <Property Type="Int32" Name="KEYID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="KEYNAME" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DURUM" />
+        </EntityType>
+        <EntityType Name="DILTITLE">
+          <Key>
+            <PropertyRef Name="DILTITLEID" />
+          </Key>
+          <Property Type="Int32" Name="DILTITLEID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="DILID" />
+          <Property Type="Int32" Name="DILKEYID" />
+          <Property Type="String" Name="DILKEYTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="DOSYAUPLOAD">
+          <Key>
+            <PropertyRef Name="DOSYAID" />
+          </Key>
+          <Property Type="Int32" Name="DOSYAID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="DOSYAADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOSYAYOLU" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="DIL" />
+          <Property Type="Int32" Name="DOSYATUR" />
+        </EntityType>
+        <EntityType Name="EBULTEN">
+          <Key>
+            <PropertyRef Name="BULTENID" />
+          </Key>
+          <Property Type="Int32" Name="BULTENID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BULTENEPOSTA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BULTENGSM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="BULTENTARIH" Precision="3" />
+          <Property Type="Boolean" Name="BULTENDURUM" />
+          <Property Type="Boolean" Name="BULTENONAY" />
+        </EntityType>
+        <EntityType Name="FORM">
+          <Key>
+            <PropertyRef Name="FORMID" />
+          </Key>
+          <Property Type="Int32" Name="FORMID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FORMTUR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="FORMUYEID" />
+          <Property Type="String" Name="FORMADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMSOYADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMADRES" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMMAIL" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMTEL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMGSM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMKONU" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMMESAJ" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="FORMTARIH" Precision="3" />
+          <Property Type="String" Name="FORMIP" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMDURUM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMYAYIN" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMFIRMA" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMPOSTAKODU" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMSEHIR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FORMKISITUR" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HABERMAKALE">
+          <Key>
+            <PropertyRef Name="HABERID" />
+          </Key>
+          <Property Type="Int32" Name="HABERID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="HABERTUR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERBASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABEROZET" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERDES" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HABERTARIH" Precision="3" />
+          <Property Type="Int32" Name="HABERSIRA" />
+          <Property Type="Boolean" Name="HABERDURUM" />
+          <Property Type="Int32" Name="HABERDIL" />
+          <Property Type="Int32" Name="HABERICERIKTUR" />
+          <Property Type="String" Name="HABERYAZAR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERIFRAME" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HABERRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Type="Int32" Name="RESID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="URID" />
+          <Property Type="String" Name="RESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Boolean" Name="TEMSIL" />
+        </EntityType>
+        <EntityType Name="ICERIK">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+          </Key>
+          <Property Type="Int32" Name="ICERIKID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ICERIKDIL" />
+          <Property Type="String" Name="ICERIKBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKTITLE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDES" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKKEY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKSIRA" />
+          <Property Type="DateTime" Name="ICERIKTARIH" Precision="3" />
+          <Property Type="Boolean" Name="ICERIKDURUM" />
+          <Property Type="Int32" Name="ICERIKKATID" />
+          <Property Type="String" Name="ICERIKOZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKOKUNDU" />
+          <Property Type="String" Name="ICERIKRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDOSYA" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKALTBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ICERIKRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Type="Int32" Name="RESID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ICERIKID" />
+          <Property Type="String" Name="RESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Boolean" Name="TEMSIL" />
+        </EntityType>
+        <EntityType Name="IK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="BASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KOD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="String" Name="DEPARTMAN" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Int32" Name="DIL" />
+        </EntityType>
+        <EntityType Name="IKFORMLAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="ADSOYAD" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOGTARIH" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EPOSTA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EGITIMBILGI" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="IKREFERANS" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOSYA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TEL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+        </EntityType>
+        <EntityType Name="ILETISIM">
+          <Key>
+            <PropertyRef Name="ILETISIMID" />
+          </Key>
+          <Property Type="Int32" Name="ILETISIMID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="DILID" />
+          <Property Type="String" Name="ADRES" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TEL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GSM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LOGO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FAKS" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MAPS" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TEL2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GSM2" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EMAIL" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LINK" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="MAPSDURUM" />
+          <Property Type="String" Name="TWITTER" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FACEBOOK" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="GOOGLE" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LINKEDIN" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YENIBIRIS" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FOURSQUARE" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="KATEGORI">
+          <Key>
+            <PropertyRef Name="KATID" />
+          </Key>
+          <Property Type="Int32" Name="KATID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="KATUSTID" />
+          <Property Type="Int32" Name="KATDIL" />
+          <Property Type="String" Name="KATADI" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATOZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATLOGO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATDES" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="KATSIRA" />
+          <Property Type="DateTime" Name="KATTARIH" Precision="3" />
+          <Property Type="Boolean" Name="KATDURUM" />
+          <Property Type="Int32" Name="KATTUR" />
+          <Property Type="Int32" Name="KATDEGIS" />
+        </EntityType>
+        <EntityType Name="SLIDER">
+          <Key>
+            <PropertyRef Name="SLIDERID" />
+          </Key>
+          <Property Type="Int32" Name="SLIDERID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SLIDERBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLIDERSLOGAN" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLIDEROZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLIDERRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLIDERLINK" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLIDERTUR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SLIDERSIRA" />
+          <Property Type="DateTime" Name="SLIDERTARIH" Precision="3" />
+          <Property Type="Boolean" Name="SLIDERDURUM" />
+          <Property Type="Int32" Name="SLIDERDIL" />
+        </EntityType>
+        <EntityType Name="SLOGAN">
+          <Key>
+            <PropertyRef Name="SLOGANID" />
+          </Key>
+          <Property Type="Int32" Name="SLOGANID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SLOGANTEXT" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SLOGANTARIH" Precision="3" />
+          <Property Type="Boolean" Name="SLOGANDURUM" />
+          <Property Type="Int32" Name="SLOGANSIRA" />
+          <Property Type="Int32" Name="SLOGANDIL" />
+          <Property Type="String" Name="SLOGANLINK" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLOGANRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TBL_YONLENDIRME">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="EskiUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YeniUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="URUN">
+          <Key>
+            <PropertyRef Name="URUNID" />
+          </Key>
+          <Property Type="Int32" Name="URUNID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="KATID" />
+          <Property Type="String" Name="URUNADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNACIKLAMA" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDESS" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="URUNSIRA" />
+          <Property Type="Boolean" Name="URUNVITRIN" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="URUNDURUM" />
+          <Property Type="Int32" Name="URUNDIL" />
+          <Property Type="String" Name="URUNURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNOLCU" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNANMA" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNCAT" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNBROSUR" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNRESIM" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="URUNDOSYA">
+          <Key>
+            <PropertyRef Name="DOSID" />
+          </Key>
+          <Property Type="Int32" Name="DOSID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="URID" />
+          <Property Type="String" Name="BASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOSYA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Int32" Name="TIP" />
+        </EntityType>
+        <EntityType Name="URUNOZELLIK">
+          <Key>
+            <PropertyRef Name="OZELLIKID" />
+          </Key>
+          <Property Type="Int32" Name="OZELLIKID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="OZELLIKUSTID" />
+          <Property Type="String" Name="OZELLIKBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="OZELLIKDURUM" />
+          <Property Type="DateTime" Name="OZELLIKTARIH" Precision="3" />
+          <Property Type="Int32" Name="OZELLIKSIRA" />
+          <Property Type="Int32" Name="OZELLIKDIL" />
+        </EntityType>
+        <EntityType Name="URUNOZELLIKILISKI">
+          <Key>
+            <PropertyRef Name="ILISKIID" />
+          </Key>
+          <Property Type="Int32" Name="ILISKIID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="URUNID" />
+          <Property Type="Int32" Name="OZELLIKID" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+        </EntityType>
+        <EntityType Name="URUNRESIM">
+          <Key>
+            <PropertyRef Name="RESID" />
+          </Key>
+          <Property Type="Int32" Name="RESID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="URID" />
+          <Property Type="String" Name="RESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Boolean" Name="TEMSIL" />
+          <Property Type="Int32" Name="TIP" />
+        </EntityType>
+        <EntityType Name="UYE">
+          <Key>
+            <PropertyRef Name="UYEID" />
+          </Key>
+          <Property Type="Int32" Name="UYEID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UYEAD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYESOYAD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYETEL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYEGSM" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYEMAIL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYEPAROLA" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYESONGIRIS" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYEAKTIVASYONKOD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="UYEAKTIVASYONDURUM" />
+          <Property Type="Boolean" Name="UYESOZLESMEDURUM" />
+          <Property Type="DateTime" Name="UYETARIH" Precision="3" />
+          <Property Type="Boolean" Name="UYEDURUM" />
+          <Property Type="String" Name="UYEIP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="UYEADRES" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="YORUM">
+          <Key>
+            <PropertyRef Name="YORUMID" />
+          </Key>
+          <Property Type="Int32" Name="YORUMID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="UYEID" />
+          <Property Type="Int32" Name="YORUMICERIKID" />
+          <Property Type="String" Name="YORUMBASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YORUMDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YORUMURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="YORUMTARIH" Precision="3" />
+          <Property Type="String" Name="YORUMIP" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="YORUMDURUM" />
+          <Property Type="Int32" Name="YORUMDIL" />
+          <Property Type="Boolean" Name="YORUMCEVAPDURUM" />
+          <Property Type="String" Name="YORUMCEVAP" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="YORUMCEVAPTARIH" Precision="3" />
+          <Property Type="String" Name="YORUMEMAIL" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VM_MAKALEYORUMSAYISI">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="OKUNDU" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="ICERIKID" Nullable="false" />
+          <Property Type="Int32" Name="ICERIKDIL" />
+          <Property Type="String" Name="ICERIKBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKTITLE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDES" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKKEY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKSIRA" />
+          <Property Type="DateTime" Name="ICERIKTARIH" Precision="3" />
+          <Property Type="Boolean" Name="ICERIKDURUM" />
+          <Property Type="Int32" Name="ICERIKKATID" />
+          <Property Type="String" Name="ICERIKOZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKOKUNDU" />
+          <Property Type="Int32" Name="OKUNDU" Nullable="false" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VW_HABERRESIM">
+          <Key>
+            <PropertyRef Name="HABERID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="HABERID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="HABERTUR" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERBASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABEROZET" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERDES" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HABERURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="HABERTARIH" Precision="3" />
+          <Property Type="Int32" Name="HABERSIRA" />
+          <Property Type="Boolean" Name="HABERDURUM" />
+          <Property Type="Int32" Name="HABERDIL" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="HABERICERIKTUR" />
+          <Property Type="String" Name="HABERYAZAR" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VW_ICERIK">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="ICERIKID" Nullable="false" />
+          <Property Type="Int32" Name="ICERIKDIL" />
+          <Property Type="String" Name="ICERIKBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKTITLE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDES" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKKEY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKSIRA" />
+          <Property Type="DateTime" Name="ICERIKTARIH" Precision="3" />
+          <Property Type="Boolean" Name="ICERIKDURUM" />
+          <Property Type="Int32" Name="ICERIKKATID" />
+          <Property Type="String" Name="ICERIKOZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATADI" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATLOGO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKOKUNDU" />
+        </EntityType>
+        <EntityType Name="VW_IK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="String" Name="BASLIK" MaxLength="201" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="KOD" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="String" Name="DEPARTMAN" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="SIRA" />
+        </EntityType>
+        <EntityType Name="VW_MAKALE">
+          <Key>
+            <PropertyRef Name="ICERIKID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="ICERIKID" Nullable="false" />
+          <Property Type="Int32" Name="ICERIKDIL" />
+          <Property Type="String" Name="ICERIKBASLIK" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKTITLE" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKDES" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKKEY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ICERIKURL" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ICERIKSIRA" />
+          <Property Type="DateTime" Name="ICERIKTARIH" Precision="3" />
+          <Property Type="Boolean" Name="ICERIKDURUM" />
+          <Property Type="Int32" Name="ICERIKKATID" />
+          <Property Type="String" Name="ICERIKOZET" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VW_Slogan">
+          <Key>
+            <PropertyRef Name="SLOGANID" />
+          </Key>
+          <Property Type="Int32" Name="SLOGANID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SLOGANTEXT" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="SLOGANTARIH" Precision="3" />
+          <Property Type="Boolean" Name="SLOGANDURUM" />
+          <Property Type="Int32" Name="SLOGANSIRA" />
+          <Property Type="Int32" Name="SLOGANDIL" />
+          <Property Type="String" Name="SLOGANLINK" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SLOGANRESIM" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VW_URUNDOSYA">
+          <Key>
+            <PropertyRef Name="DOSID" />
+          </Key>
+          <Property Type="String" Name="BASLIK" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DOSYA" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="URID" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Int32" Name="SIRA" />
+          <Property Type="Boolean" Name="DURUM" />
+          <Property Type="Int32" Name="TIP" />
+          <Property Type="Int32" Name="DOSID" Nullable="false" />
+          <Property Type="String" Name="URUNURL" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="VW_URUNRESIM">
+          <Key>
+            <PropertyRef Name="URUNID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="URUNID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="KATID" />
+          <Property Type="String" Name="URUNADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNACIKLAMA" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDESS" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="URUNSIRA" />
+          <Property Type="Boolean" Name="URUNVITRIN" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="URUNDURUM" />
+          <Property Type="Int32" Name="URUNDIL" />
+          <Property Type="String" Name="URUNURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNOLCU" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNANMA" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNBROSUR" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNCAT" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="vw_UrunResimKatResim">
+          <Key>
+            <PropertyRef Name="URUNID" />
+            <PropertyRef Name="RESIM" />
+          </Key>
+          <Property Type="Int32" Name="URUNID" Nullable="false" />
+          <Property Type="Int32" Name="KATID" />
+          <Property Type="String" Name="URUNADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDETAY" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNACIKLAMA" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNTITLE" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNDESS" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNKEY" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="URUNSIRA" />
+          <Property Type="Boolean" Name="URUNVITRIN" />
+          <Property Type="DateTime" Name="TARIH" Precision="3" />
+          <Property Type="Boolean" Name="URUNDURUM" />
+          <Property Type="Int32" Name="URUNDIL" />
+          <Property Type="String" Name="URUNURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNOLCU" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="URUNANMA" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="RESIM" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATURL" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATADI" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="KATLOGO" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="LISANSLAMALAR">
+          <Key>
+            <PropertyRef Name="FIRID" />
+          </Key>
+          <Property Type="Int32" Name="FIRID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="FIRADSOYAD" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRDOGUMTARIHI" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIREMAIL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRGSMNO" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRFIRMAADI" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRIL" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRILCE" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRADRES" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRVERGIDAIRESI" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRVERGINO" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRLISANSKEY" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="FIRKULLANICISAYISI" />
+          <Property Type="DateTime" Name="FIRLISANSBASTARIH" Precision="3" />
+          <Property Type="DateTime" Name="FIRLISANSBITTARIH" Precision="3" />
+          <Property Type="Int32" Name="FIRGUNCELLEMESIKLIGI" />
+          <Property Type="String" Name="FIRBOARDSERIALNO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRCPUSERIALNO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FIRHDDSERIALNO" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="FIRDEMOMU" />
+          <Property Type="Boolean" Name="FIRAKTIF" />
+          <Property Type="DateTime" Name="FIRKAYITTARIHI" Precision="3" />
+        </EntityType>
+        <EntityType Name="REKLAM">
+          <Key>
+            <PropertyRef Name="REKID" />
+          </Key>
+          <Property Type="Int32" Name="REKID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="REKADI" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REKTIPI" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REKYOLU" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="REKKODU" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="REKHIT" />
+          <Property Type="Int32" Name="REKTIK" />
+          <Property Type="String" Name="REKGUID" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="REKAKTIF" />
+          <Property Type="String" Name="REKLINK" MaxLength="1500" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="InPlusYonetimModelStoreContainer" CdmEntityContainer="YonetimEntities">
+          <FunctionImportMapping FunctionImportName="sp_UrunOzellikSil" FunctionName="InPlusYonetimModel.Store.sp_UrunOzellikSil" />
+          <FunctionImportMapping FunctionImportName="DilTitleSil" FunctionName="InPlusYonetimModel.Store.sp_DilTitleSil" />
+          <FunctionImportMapping FunctionImportName="Sp_OzellikGetir" FunctionName="InPlusYonetimModel.Store.Sp_OzellikGetir" />
+          <EntitySetMapping Name="REZERVASYONs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.REZERVASYON">
+              <MappingFragment StoreEntitySet="REZERVASYON">
+                <ScalarProperty Name="REZERVASYONDURUM" ColumnName="REZERVASYONDURUM" />
+                <ScalarProperty Name="REZERVASYONKISI" ColumnName="REZERVASYONKISI" />
+                <ScalarProperty Name="REZERVASYONTARIH" ColumnName="REZERVASYONTARIH" />
+                <ScalarProperty Name="REZERVASYONMAIL" ColumnName="REZERVASYONMAIL" />
+                <ScalarProperty Name="REZERVASYONTEL" ColumnName="REZERVASYONTEL" />
+                <ScalarProperty Name="REZERVASYONADI" ColumnName="REZERVASYONADI" />
+                <ScalarProperty Name="REZERVASYONID" ColumnName="REZERVASYONID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADMINs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ADMIN">
+              <MappingFragment StoreEntitySet="ADMIN">
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="ADMINPAROLA" ColumnName="ADMINPAROLA" />
+                <ScalarProperty Name="ADMINKULLANICI" ColumnName="ADMINKULLANICI" />
+                <ScalarProperty Name="ADMINADI" ColumnName="ADMINADI" />
+                <ScalarProperty Name="ADMINID" ColumnName="ADMINID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALBUMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ALBUM">
+              <MappingFragment StoreEntitySet="ALBUM">
+                <ScalarProperty Name="ALBUMURL" ColumnName="ALBUMURL" />
+                <ScalarProperty Name="ALBUMDURUM" ColumnName="ALBUMDURUM" />
+                <ScalarProperty Name="ALBUMTARIH" ColumnName="ALBUMTARIH" />
+                <ScalarProperty Name="ALBUMSIRA" ColumnName="ALBUMSIRA" />
+                <ScalarProperty Name="ALBUMLOGO" ColumnName="ALBUMLOGO" />
+                <ScalarProperty Name="ALBUMBASLIK" ColumnName="ALBUMBASLIK" />
+                <ScalarProperty Name="ALBUMDIL" ColumnName="ALBUMDIL" />
+                <ScalarProperty Name="ALBUMID" ColumnName="ALBUMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALBUMILISKIs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ALBUMILISKI">
+              <MappingFragment StoreEntitySet="ALBUMILISKI">
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="HABERID" ColumnName="HABERID" />
+                <ScalarProperty Name="GALERIID" ColumnName="GALERIID" />
+                <ScalarProperty Name="ALBUMID" ColumnName="ALBUMID" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+                <ScalarProperty Name="KATID" ColumnName="KATID" />
+                <ScalarProperty Name="BAGID" ColumnName="BAGID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ALBUMRESIMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ALBUMRESIM">
+              <MappingFragment StoreEntitySet="ALBUMRESIM">
+                <ScalarProperty Name="RESICERIK" ColumnName="RESICERIK" />
+                <ScalarProperty Name="RESBASLIK" ColumnName="RESBASLIK" />
+                <ScalarProperty Name="RESIMURL" ColumnName="RESIMURL" />
+                <ScalarProperty Name="ALBUMID" ColumnName="ALBUMID" />
+                <ScalarProperty Name="RESDURUM" ColumnName="RESDURUM" />
+                <ScalarProperty Name="RESTARIH" ColumnName="RESTARIH" />
+                <ScalarProperty Name="RESSIRA" ColumnName="RESSIRA" />
+                <ScalarProperty Name="RESYOL" ColumnName="RESYOL" />
+                <ScalarProperty Name="RESDIL" ColumnName="RESDIL" />
+                <ScalarProperty Name="RESID" ColumnName="RESID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ANKETs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ANKET">
+              <MappingFragment StoreEntitySet="ANKET">
+                <ScalarProperty Name="DIL" ColumnName="DIL" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="ANKETSORU" ColumnName="ANKETSORU" />
+                <ScalarProperty Name="ANKETID" ColumnName="ANKETID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ANKETCEVAPs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ANKETCEVAP">
+              <MappingFragment StoreEntitySet="ANKETCEVAP">
+                <ScalarProperty Name="CEVAPSAY" ColumnName="CEVAPSAY" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="CEVAPSIRA" ColumnName="CEVAPSIRA" />
+                <ScalarProperty Name="CEVAP" ColumnName="CEVAP" />
+                <ScalarProperty Name="CEVAPSORUID" ColumnName="CEVAPSORUID" />
+                <ScalarProperty Name="CEVAPID" ColumnName="CEVAPID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AYARs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.AYAR">
+              <MappingFragment StoreEntitySet="AYAR">
+                <ScalarProperty Name="DIL" ColumnName="DIL" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="EPOSTAPORT" ColumnName="EPOSTAPORT" />
+                <ScalarProperty Name="EPOSTASMTP" ColumnName="EPOSTASMTP" />
+                <ScalarProperty Name="EPOSTAPAROLA" ColumnName="EPOSTAPAROLA" />
+                <ScalarProperty Name="EPOSTA" ColumnName="EPOSTA" />
+                <ScalarProperty Name="DEFAULTDIL" ColumnName="DEFAULTDIL" />
+                <ScalarProperty Name="ANALYTICSKODU" ColumnName="ANALYTICSKODU" />
+                <ScalarProperty Name="ANASAYFAKEY" ColumnName="ANASAYFAKEY" />
+                <ScalarProperty Name="ANASAYFADES" ColumnName="ANASAYFADES" />
+                <ScalarProperty Name="ANASAYFATITLE" ColumnName="ANASAYFATITLE" />
+                <ScalarProperty Name="AYARID" ColumnName="AYARID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DILs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.DIL">
+              <MappingFragment StoreEntitySet="DIL">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="DILTUR" ColumnName="DILTUR" />
+                <ScalarProperty Name="DILAD" ColumnName="DILAD" />
+                <ScalarProperty Name="DILID" ColumnName="DILID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DILKEYs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.DILKEY">
+              <MappingFragment StoreEntitySet="DILKEY">
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="KEYNAME" ColumnName="KEYNAME" />
+                <ScalarProperty Name="KEYID" ColumnName="KEYID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DILTITLEs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.DILTITLE">
+              <MappingFragment StoreEntitySet="DILTITLE">
+                <ScalarProperty Name="DILKEYTITLE" ColumnName="DILKEYTITLE" />
+                <ScalarProperty Name="DILKEYID" ColumnName="DILKEYID" />
+                <ScalarProperty Name="DILID" ColumnName="DILID" />
+                <ScalarProperty Name="DILTITLEID" ColumnName="DILTITLEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DOSYAUPLOADs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.DOSYAUPLOAD">
+              <MappingFragment StoreEntitySet="DOSYAUPLOAD">
+                <ScalarProperty Name="DOSYATUR" ColumnName="DOSYATUR" />
+                <ScalarProperty Name="DIL" ColumnName="DIL" />
+                <ScalarProperty Name="DOSYAYOLU" ColumnName="DOSYAYOLU" />
+                <ScalarProperty Name="DOSYAADI" ColumnName="DOSYAADI" />
+                <ScalarProperty Name="DOSYAID" ColumnName="DOSYAID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EBULTENs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.EBULTEN">
+              <MappingFragment StoreEntitySet="EBULTEN">
+                <ScalarProperty Name="BULTENONAY" ColumnName="BULTENONAY" />
+                <ScalarProperty Name="BULTENDURUM" ColumnName="BULTENDURUM" />
+                <ScalarProperty Name="BULTENTARIH" ColumnName="BULTENTARIH" />
+                <ScalarProperty Name="BULTENGSM" ColumnName="BULTENGSM" />
+                <ScalarProperty Name="BULTENEPOSTA" ColumnName="BULTENEPOSTA" />
+                <ScalarProperty Name="BULTENID" ColumnName="BULTENID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FORMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.FORM">
+              <MappingFragment StoreEntitySet="FORM">
+                <ScalarProperty Name="FORMKISITUR" ColumnName="FORMKISITUR" />
+                <ScalarProperty Name="FORMSEHIR" ColumnName="FORMSEHIR" />
+                <ScalarProperty Name="FORMPOSTAKODU" ColumnName="FORMPOSTAKODU" />
+                <ScalarProperty Name="FORMFIRMA" ColumnName="FORMFIRMA" />
+                <ScalarProperty Name="FORMYAYIN" ColumnName="FORMYAYIN" />
+                <ScalarProperty Name="FORMDURUM" ColumnName="FORMDURUM" />
+                <ScalarProperty Name="FORMIP" ColumnName="FORMIP" />
+                <ScalarProperty Name="FORMTARIH" ColumnName="FORMTARIH" />
+                <ScalarProperty Name="FORMMESAJ" ColumnName="FORMMESAJ" />
+                <ScalarProperty Name="FORMKONU" ColumnName="FORMKONU" />
+                <ScalarProperty Name="FORMGSM" ColumnName="FORMGSM" />
+                <ScalarProperty Name="FORMTEL" ColumnName="FORMTEL" />
+                <ScalarProperty Name="FORMMAIL" ColumnName="FORMMAIL" />
+                <ScalarProperty Name="FORMADRES" ColumnName="FORMADRES" />
+                <ScalarProperty Name="FORMSOYADI" ColumnName="FORMSOYADI" />
+                <ScalarProperty Name="FORMADI" ColumnName="FORMADI" />
+                <ScalarProperty Name="FORMUYEID" ColumnName="FORMUYEID" />
+                <ScalarProperty Name="FORMTUR" ColumnName="FORMTUR" />
+                <ScalarProperty Name="FORMID" ColumnName="FORMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HABERMAKALEs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.HABERMAKALE">
+              <MappingFragment StoreEntitySet="HABERMAKALE">
+                <ScalarProperty Name="HABERIFRAME" ColumnName="HABERIFRAME" />
+                <ScalarProperty Name="HABERYAZAR" ColumnName="HABERYAZAR" />
+                <ScalarProperty Name="HABERICERIKTUR" ColumnName="HABERICERIKTUR" />
+                <ScalarProperty Name="HABERDIL" ColumnName="HABERDIL" />
+                <ScalarProperty Name="HABERDURUM" ColumnName="HABERDURUM" />
+                <ScalarProperty Name="HABERSIRA" ColumnName="HABERSIRA" />
+                <ScalarProperty Name="HABERTARIH" ColumnName="HABERTARIH" />
+                <ScalarProperty Name="HABERURL" ColumnName="HABERURL" />
+                <ScalarProperty Name="HABERKEY" ColumnName="HABERKEY" />
+                <ScalarProperty Name="HABERDES" ColumnName="HABERDES" />
+                <ScalarProperty Name="HABERTITLE" ColumnName="HABERTITLE" />
+                <ScalarProperty Name="HABERRESIM" ColumnName="HABERRESIM" />
+                <ScalarProperty Name="HABERDETAY" ColumnName="HABERDETAY" />
+                <ScalarProperty Name="HABEROZET" ColumnName="HABEROZET" />
+                <ScalarProperty Name="HABERBASLIK" ColumnName="HABERBASLIK" />
+                <ScalarProperty Name="HABERTUR" ColumnName="HABERTUR" />
+                <ScalarProperty Name="HABERID" ColumnName="HABERID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HABERRESIMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.HABERRESIM">
+              <MappingFragment StoreEntitySet="HABERRESIM">
+                <ScalarProperty Name="TEMSIL" ColumnName="TEMSIL" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="URID" ColumnName="URID" />
+                <ScalarProperty Name="RESID" ColumnName="RESID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICERIKs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ICERIK">
+              <MappingFragment StoreEntitySet="ICERIK">
+                <ScalarProperty Name="ICERIKALTBASLIK" ColumnName="ICERIKALTBASLIK" />
+                <ScalarProperty Name="ICERIKDOSYA" ColumnName="ICERIKDOSYA" />
+                <ScalarProperty Name="ICERIKRESIM" ColumnName="ICERIKRESIM" />
+                <ScalarProperty Name="ICERIKOKUNDU" ColumnName="ICERIKOKUNDU" />
+                <ScalarProperty Name="ICERIKOZET" ColumnName="ICERIKOZET" />
+                <ScalarProperty Name="ICERIKKATID" ColumnName="ICERIKKATID" />
+                <ScalarProperty Name="ICERIKDURUM" ColumnName="ICERIKDURUM" />
+                <ScalarProperty Name="ICERIKTARIH" ColumnName="ICERIKTARIH" />
+                <ScalarProperty Name="ICERIKSIRA" ColumnName="ICERIKSIRA" />
+                <ScalarProperty Name="ICERIKURL" ColumnName="ICERIKURL" />
+                <ScalarProperty Name="ICERIKKEY" ColumnName="ICERIKKEY" />
+                <ScalarProperty Name="ICERIKDES" ColumnName="ICERIKDES" />
+                <ScalarProperty Name="ICERIKTITLE" ColumnName="ICERIKTITLE" />
+                <ScalarProperty Name="ICERIKDETAY" ColumnName="ICERIKDETAY" />
+                <ScalarProperty Name="ICERIKBASLIK" ColumnName="ICERIKBASLIK" />
+                <ScalarProperty Name="ICERIKDIL" ColumnName="ICERIKDIL" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ICERIKRESIMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ICERIKRESIM">
+              <MappingFragment StoreEntitySet="ICERIKRESIM">
+                <ScalarProperty Name="TEMSIL" ColumnName="TEMSIL" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+                <ScalarProperty Name="RESID" ColumnName="RESID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IKs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.IK">
+              <MappingFragment StoreEntitySet="IK">
+                <ScalarProperty Name="DIL" ColumnName="DIL" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="DETAY" ColumnName="DETAY" />
+                <ScalarProperty Name="KOD" ColumnName="KOD" />
+                <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IKFORMLARs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.IKFORMLAR">
+              <MappingFragment StoreEntitySet="IKFORMLAR">
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TEL" ColumnName="TEL" />
+                <ScalarProperty Name="DOSYA" ColumnName="DOSYA" />
+                <ScalarProperty Name="IKREFERANS" ColumnName="IKREFERANS" />
+                <ScalarProperty Name="EGITIMBILGI" ColumnName="EGITIMBILGI" />
+                <ScalarProperty Name="EPOSTA" ColumnName="EPOSTA" />
+                <ScalarProperty Name="DOGTARIH" ColumnName="DOGTARIH" />
+                <ScalarProperty Name="ADSOYAD" ColumnName="ADSOYAD" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ILETISIMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.ILETISIM">
+              <MappingFragment StoreEntitySet="ILETISIM">
+                <ScalarProperty Name="FOURSQUARE" ColumnName="FOURSQUARE" />
+                <ScalarProperty Name="YENIBIRIS" ColumnName="YENIBIRIS" />
+                <ScalarProperty Name="LINKEDIN" ColumnName="LINKEDIN" />
+                <ScalarProperty Name="GOOGLE" ColumnName="GOOGLE" />
+                <ScalarProperty Name="FACEBOOK" ColumnName="FACEBOOK" />
+                <ScalarProperty Name="TWITTER" ColumnName="TWITTER" />
+                <ScalarProperty Name="MAPSDURUM" ColumnName="MAPSDURUM" />
+                <ScalarProperty Name="LINK" ColumnName="LINK" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="GSM2" ColumnName="GSM2" />
+                <ScalarProperty Name="TEL2" ColumnName="TEL2" />
+                <ScalarProperty Name="MAPS" ColumnName="MAPS" />
+                <ScalarProperty Name="FAKS" ColumnName="FAKS" />
+                <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+                <ScalarProperty Name="LOGO" ColumnName="LOGO" />
+                <ScalarProperty Name="GSM" ColumnName="GSM" />
+                <ScalarProperty Name="TEL" ColumnName="TEL" />
+                <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+                <ScalarProperty Name="DILID" ColumnName="DILID" />
+                <ScalarProperty Name="ILETISIMID" ColumnName="ILETISIMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KATEGORIs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.KATEGORI">
+              <MappingFragment StoreEntitySet="KATEGORI">
+                <ScalarProperty Name="KATDEGIS" ColumnName="KATDEGIS" />
+                <ScalarProperty Name="KATTUR" ColumnName="KATTUR" />
+                <ScalarProperty Name="KATDURUM" ColumnName="KATDURUM" />
+                <ScalarProperty Name="KATTARIH" ColumnName="KATTARIH" />
+                <ScalarProperty Name="KATSIRA" ColumnName="KATSIRA" />
+                <ScalarProperty Name="KATURL" ColumnName="KATURL" />
+                <ScalarProperty Name="KATKEY" ColumnName="KATKEY" />
+                <ScalarProperty Name="KATDES" ColumnName="KATDES" />
+                <ScalarProperty Name="KATTITLE" ColumnName="KATTITLE" />
+                <ScalarProperty Name="KATLOGO" ColumnName="KATLOGO" />
+                <ScalarProperty Name="KATOZET" ColumnName="KATOZET" />
+                <ScalarProperty Name="KATADI" ColumnName="KATADI" />
+                <ScalarProperty Name="KATDIL" ColumnName="KATDIL" />
+                <ScalarProperty Name="KATUSTID" ColumnName="KATUSTID" />
+                <ScalarProperty Name="KATID" ColumnName="KATID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SLIDERs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.SLIDER">
+              <MappingFragment StoreEntitySet="SLIDER">
+                <ScalarProperty Name="SLIDERDIL" ColumnName="SLIDERDIL" />
+                <ScalarProperty Name="SLIDERDURUM" ColumnName="SLIDERDURUM" />
+                <ScalarProperty Name="SLIDERTARIH" ColumnName="SLIDERTARIH" />
+                <ScalarProperty Name="SLIDERSIRA" ColumnName="SLIDERSIRA" />
+                <ScalarProperty Name="SLIDERTUR" ColumnName="SLIDERTUR" />
+                <ScalarProperty Name="SLIDERLINK" ColumnName="SLIDERLINK" />
+                <ScalarProperty Name="SLIDERRESIM" ColumnName="SLIDERRESIM" />
+                <ScalarProperty Name="SLIDEROZET" ColumnName="SLIDEROZET" />
+                <ScalarProperty Name="SLIDERSLOGAN" ColumnName="SLIDERSLOGAN" />
+                <ScalarProperty Name="SLIDERBASLIK" ColumnName="SLIDERBASLIK" />
+                <ScalarProperty Name="SLIDERID" ColumnName="SLIDERID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SLOGANs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.SLOGAN">
+              <MappingFragment StoreEntitySet="SLOGAN">
+                <ScalarProperty Name="SLOGANRESIM" ColumnName="SLOGANRESIM" />
+                <ScalarProperty Name="SLOGANLINK" ColumnName="SLOGANLINK" />
+                <ScalarProperty Name="SLOGANDIL" ColumnName="SLOGANDIL" />
+                <ScalarProperty Name="SLOGANSIRA" ColumnName="SLOGANSIRA" />
+                <ScalarProperty Name="SLOGANDURUM" ColumnName="SLOGANDURUM" />
+                <ScalarProperty Name="SLOGANTARIH" ColumnName="SLOGANTARIH" />
+                <ScalarProperty Name="SLOGANTEXT" ColumnName="SLOGANTEXT" />
+                <ScalarProperty Name="SLOGANID" ColumnName="SLOGANID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TBL_YONLENDIRME">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.TBL_YONLENDIRME">
+              <MappingFragment StoreEntitySet="TBL_YONLENDIRME">
+                <ScalarProperty Name="YeniUrl" ColumnName="YeniUrl" />
+                <ScalarProperty Name="EskiUrl" ColumnName="EskiUrl" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.URUN">
+              <MappingFragment StoreEntitySet="URUN">
+                <ScalarProperty Name="URUNRESIM" ColumnName="URUNRESIM" />
+                <ScalarProperty Name="URUNBROSUR" ColumnName="URUNBROSUR" />
+                <ScalarProperty Name="URUNCAT" ColumnName="URUNCAT" />
+                <ScalarProperty Name="URUNANMA" ColumnName="URUNANMA" />
+                <ScalarProperty Name="URUNOLCU" ColumnName="URUNOLCU" />
+                <ScalarProperty Name="URUNURL" ColumnName="URUNURL" />
+                <ScalarProperty Name="URUNDIL" ColumnName="URUNDIL" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="URUNVITRIN" ColumnName="URUNVITRIN" />
+                <ScalarProperty Name="URUNSIRA" ColumnName="URUNSIRA" />
+                <ScalarProperty Name="URUNKEY" ColumnName="URUNKEY" />
+                <ScalarProperty Name="URUNDESS" ColumnName="URUNDESS" />
+                <ScalarProperty Name="URUNTITLE" ColumnName="URUNTITLE" />
+                <ScalarProperty Name="URUNACIKLAMA" ColumnName="URUNACIKLAMA" />
+                <ScalarProperty Name="URUNDETAY" ColumnName="URUNDETAY" />
+                <ScalarProperty Name="URUNADI" ColumnName="URUNADI" />
+                <ScalarProperty Name="KATID" ColumnName="KATID" />
+                <ScalarProperty Name="URUNID" ColumnName="URUNID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNDOSYAs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.URUNDOSYA">
+              <MappingFragment StoreEntitySet="URUNDOSYA">
+                <ScalarProperty Name="TIP" ColumnName="TIP" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="DOSYA" ColumnName="DOSYA" />
+                <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+                <ScalarProperty Name="URID" ColumnName="URID" />
+                <ScalarProperty Name="DOSID" ColumnName="DOSID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNOZELLIKs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.URUNOZELLIK">
+              <MappingFragment StoreEntitySet="URUNOZELLIK">
+                <ScalarProperty Name="OZELLIKDIL" ColumnName="OZELLIKDIL" />
+                <ScalarProperty Name="OZELLIKSIRA" ColumnName="OZELLIKSIRA" />
+                <ScalarProperty Name="OZELLIKTARIH" ColumnName="OZELLIKTARIH" />
+                <ScalarProperty Name="OZELLIKDURUM" ColumnName="OZELLIKDURUM" />
+                <ScalarProperty Name="OZELLIKBASLIK" ColumnName="OZELLIKBASLIK" />
+                <ScalarProperty Name="OZELLIKUSTID" ColumnName="OZELLIKUSTID" />
+                <ScalarProperty Name="OZELLIKID" ColumnName="OZELLIKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNOZELLIKILISKIs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.URUNOZELLIKILISKI">
+              <MappingFragment StoreEntitySet="URUNOZELLIKILISKI">
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="OZELLIKID" ColumnName="OZELLIKID" />
+                <ScalarProperty Name="URUNID" ColumnName="URUNID" />
+                <ScalarProperty Name="ILISKIID" ColumnName="ILISKIID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="URUNRESIMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.URUNRESIM">
+              <MappingFragment StoreEntitySet="URUNRESIM">
+                <ScalarProperty Name="TIP" ColumnName="TIP" />
+                <ScalarProperty Name="TEMSIL" ColumnName="TEMSIL" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="URID" ColumnName="URID" />
+                <ScalarProperty Name="RESID" ColumnName="RESID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UYEs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.UYE">
+              <MappingFragment StoreEntitySet="UYE">
+                <ScalarProperty Name="UYEADRES" ColumnName="UYEADRES" />
+                <ScalarProperty Name="UYEIP" ColumnName="UYEIP" />
+                <ScalarProperty Name="UYEDURUM" ColumnName="UYEDURUM" />
+                <ScalarProperty Name="UYETARIH" ColumnName="UYETARIH" />
+                <ScalarProperty Name="UYESOZLESMEDURUM" ColumnName="UYESOZLESMEDURUM" />
+                <ScalarProperty Name="UYEAKTIVASYONDURUM" ColumnName="UYEAKTIVASYONDURUM" />
+                <ScalarProperty Name="UYEAKTIVASYONKOD" ColumnName="UYEAKTIVASYONKOD" />
+                <ScalarProperty Name="UYESONGIRIS" ColumnName="UYESONGIRIS" />
+                <ScalarProperty Name="UYEPAROLA" ColumnName="UYEPAROLA" />
+                <ScalarProperty Name="UYEMAIL" ColumnName="UYEMAIL" />
+                <ScalarProperty Name="UYEGSM" ColumnName="UYEGSM" />
+                <ScalarProperty Name="UYETEL" ColumnName="UYETEL" />
+                <ScalarProperty Name="UYESOYAD" ColumnName="UYESOYAD" />
+                <ScalarProperty Name="UYEAD" ColumnName="UYEAD" />
+                <ScalarProperty Name="UYEID" ColumnName="UYEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="YORUMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.YORUM">
+              <MappingFragment StoreEntitySet="YORUM">
+                <ScalarProperty Name="YORUMEMAIL" ColumnName="YORUMEMAIL" />
+                <ScalarProperty Name="YORUMCEVAPTARIH" ColumnName="YORUMCEVAPTARIH" />
+                <ScalarProperty Name="YORUMCEVAP" ColumnName="YORUMCEVAP" />
+                <ScalarProperty Name="YORUMCEVAPDURUM" ColumnName="YORUMCEVAPDURUM" />
+                <ScalarProperty Name="YORUMDIL" ColumnName="YORUMDIL" />
+                <ScalarProperty Name="YORUMDURUM" ColumnName="YORUMDURUM" />
+                <ScalarProperty Name="YORUMIP" ColumnName="YORUMIP" />
+                <ScalarProperty Name="YORUMTARIH" ColumnName="YORUMTARIH" />
+                <ScalarProperty Name="YORUMURL" ColumnName="YORUMURL" />
+                <ScalarProperty Name="YORUMDETAY" ColumnName="YORUMDETAY" />
+                <ScalarProperty Name="YORUMBASLIK" ColumnName="YORUMBASLIK" />
+                <ScalarProperty Name="YORUMICERIKID" ColumnName="YORUMICERIKID" />
+                <ScalarProperty Name="UYEID" ColumnName="UYEID" />
+                <ScalarProperty Name="YORUMID" ColumnName="YORUMID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VM_MAKALEYORUMSAYISI">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VM_MAKALEYORUMSAYISI">
+              <MappingFragment StoreEntitySet="VM_MAKALEYORUMSAYISI">
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="OKUNDU" ColumnName="OKUNDU" />
+                <ScalarProperty Name="ICERIKOKUNDU" ColumnName="ICERIKOKUNDU" />
+                <ScalarProperty Name="ICERIKOZET" ColumnName="ICERIKOZET" />
+                <ScalarProperty Name="ICERIKKATID" ColumnName="ICERIKKATID" />
+                <ScalarProperty Name="ICERIKDURUM" ColumnName="ICERIKDURUM" />
+                <ScalarProperty Name="ICERIKTARIH" ColumnName="ICERIKTARIH" />
+                <ScalarProperty Name="ICERIKSIRA" ColumnName="ICERIKSIRA" />
+                <ScalarProperty Name="ICERIKURL" ColumnName="ICERIKURL" />
+                <ScalarProperty Name="ICERIKKEY" ColumnName="ICERIKKEY" />
+                <ScalarProperty Name="ICERIKDES" ColumnName="ICERIKDES" />
+                <ScalarProperty Name="ICERIKTITLE" ColumnName="ICERIKTITLE" />
+                <ScalarProperty Name="ICERIKDETAY" ColumnName="ICERIKDETAY" />
+                <ScalarProperty Name="ICERIKBASLIK" ColumnName="ICERIKBASLIK" />
+                <ScalarProperty Name="ICERIKDIL" ColumnName="ICERIKDIL" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_HABERRESIM">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_HABERRESIM">
+              <MappingFragment StoreEntitySet="VW_HABERRESIM">
+                <ScalarProperty Name="HABERYAZAR" ColumnName="HABERYAZAR" />
+                <ScalarProperty Name="HABERICERIKTUR" ColumnName="HABERICERIKTUR" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="HABERDIL" ColumnName="HABERDIL" />
+                <ScalarProperty Name="HABERDURUM" ColumnName="HABERDURUM" />
+                <ScalarProperty Name="HABERSIRA" ColumnName="HABERSIRA" />
+                <ScalarProperty Name="HABERTARIH" ColumnName="HABERTARIH" />
+                <ScalarProperty Name="HABERURL" ColumnName="HABERURL" />
+                <ScalarProperty Name="HABERKEY" ColumnName="HABERKEY" />
+                <ScalarProperty Name="HABERDES" ColumnName="HABERDES" />
+                <ScalarProperty Name="HABERTITLE" ColumnName="HABERTITLE" />
+                <ScalarProperty Name="HABERDETAY" ColumnName="HABERDETAY" />
+                <ScalarProperty Name="HABEROZET" ColumnName="HABEROZET" />
+                <ScalarProperty Name="HABERBASLIK" ColumnName="HABERBASLIK" />
+                <ScalarProperty Name="HABERTUR" ColumnName="HABERTUR" />
+                <ScalarProperty Name="HABERID" ColumnName="HABERID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_ICERIK">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_ICERIK">
+              <MappingFragment StoreEntitySet="VW_ICERIK">
+                <ScalarProperty Name="ICERIKOKUNDU" ColumnName="ICERIKOKUNDU" />
+                <ScalarProperty Name="ICERIKRESIM" ColumnName="ICERIKRESIM" />
+                <ScalarProperty Name="KATURL" ColumnName="KATURL" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="KATLOGO" ColumnName="KATLOGO" />
+                <ScalarProperty Name="KATADI" ColumnName="KATADI" />
+                <ScalarProperty Name="ICERIKOZET" ColumnName="ICERIKOZET" />
+                <ScalarProperty Name="ICERIKKATID" ColumnName="ICERIKKATID" />
+                <ScalarProperty Name="ICERIKDURUM" ColumnName="ICERIKDURUM" />
+                <ScalarProperty Name="ICERIKTARIH" ColumnName="ICERIKTARIH" />
+                <ScalarProperty Name="ICERIKSIRA" ColumnName="ICERIKSIRA" />
+                <ScalarProperty Name="ICERIKURL" ColumnName="ICERIKURL" />
+                <ScalarProperty Name="ICERIKKEY" ColumnName="ICERIKKEY" />
+                <ScalarProperty Name="ICERIKDES" ColumnName="ICERIKDES" />
+                <ScalarProperty Name="ICERIKTITLE" ColumnName="ICERIKTITLE" />
+                <ScalarProperty Name="ICERIKDETAY" ColumnName="ICERIKDETAY" />
+                <ScalarProperty Name="ICERIKBASLIK" ColumnName="ICERIKBASLIK" />
+                <ScalarProperty Name="ICERIKDIL" ColumnName="ICERIKDIL" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_IK">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_IK">
+              <MappingFragment StoreEntitySet="VW_IK">
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="DEPARTMAN" ColumnName="DEPARTMAN" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="DETAY" ColumnName="DETAY" />
+                <ScalarProperty Name="KOD" ColumnName="KOD" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_MAKALE">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_MAKALE">
+              <MappingFragment StoreEntitySet="VW_MAKALE">
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="KATURL" ColumnName="KATURL" />
+                <ScalarProperty Name="ICERIKOZET" ColumnName="ICERIKOZET" />
+                <ScalarProperty Name="ICERIKKATID" ColumnName="ICERIKKATID" />
+                <ScalarProperty Name="ICERIKDURUM" ColumnName="ICERIKDURUM" />
+                <ScalarProperty Name="ICERIKTARIH" ColumnName="ICERIKTARIH" />
+                <ScalarProperty Name="ICERIKSIRA" ColumnName="ICERIKSIRA" />
+                <ScalarProperty Name="ICERIKURL" ColumnName="ICERIKURL" />
+                <ScalarProperty Name="ICERIKKEY" ColumnName="ICERIKKEY" />
+                <ScalarProperty Name="ICERIKDES" ColumnName="ICERIKDES" />
+                <ScalarProperty Name="ICERIKTITLE" ColumnName="ICERIKTITLE" />
+                <ScalarProperty Name="ICERIKDETAY" ColumnName="ICERIKDETAY" />
+                <ScalarProperty Name="ICERIKBASLIK" ColumnName="ICERIKBASLIK" />
+                <ScalarProperty Name="ICERIKDIL" ColumnName="ICERIKDIL" />
+                <ScalarProperty Name="ICERIKID" ColumnName="ICERIKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_Slogan">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_Slogan">
+              <MappingFragment StoreEntitySet="VW_Slogan">
+                <ScalarProperty Name="SLOGANRESIM" ColumnName="SLOGANRESIM" />
+                <ScalarProperty Name="SLOGANLINK" ColumnName="SLOGANLINK" />
+                <ScalarProperty Name="SLOGANDIL" ColumnName="SLOGANDIL" />
+                <ScalarProperty Name="SLOGANSIRA" ColumnName="SLOGANSIRA" />
+                <ScalarProperty Name="SLOGANDURUM" ColumnName="SLOGANDURUM" />
+                <ScalarProperty Name="SLOGANTARIH" ColumnName="SLOGANTARIH" />
+                <ScalarProperty Name="SLOGANTEXT" ColumnName="SLOGANTEXT" />
+                <ScalarProperty Name="SLOGANID" ColumnName="SLOGANID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_URUNDOSYA">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_URUNDOSYA">
+              <MappingFragment StoreEntitySet="VW_URUNDOSYA">
+                <ScalarProperty Name="URUNURL" ColumnName="URUNURL" />
+                <ScalarProperty Name="DOSID" ColumnName="DOSID" />
+                <ScalarProperty Name="TIP" ColumnName="TIP" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+                <ScalarProperty Name="SIRA" ColumnName="SIRA" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="URID" ColumnName="URID" />
+                <ScalarProperty Name="DOSYA" ColumnName="DOSYA" />
+                <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VW_URUNRESIM">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.VW_URUNRESIM">
+              <MappingFragment StoreEntitySet="VW_URUNRESIM">
+                <ScalarProperty Name="URUNCAT" ColumnName="URUNCAT" />
+                <ScalarProperty Name="URUNBROSUR" ColumnName="URUNBROSUR" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="URUNANMA" ColumnName="URUNANMA" />
+                <ScalarProperty Name="URUNOLCU" ColumnName="URUNOLCU" />
+                <ScalarProperty Name="URUNURL" ColumnName="URUNURL" />
+                <ScalarProperty Name="URUNDIL" ColumnName="URUNDIL" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="URUNVITRIN" ColumnName="URUNVITRIN" />
+                <ScalarProperty Name="URUNSIRA" ColumnName="URUNSIRA" />
+                <ScalarProperty Name="URUNKEY" ColumnName="URUNKEY" />
+                <ScalarProperty Name="URUNDESS" ColumnName="URUNDESS" />
+                <ScalarProperty Name="URUNTITLE" ColumnName="URUNTITLE" />
+                <ScalarProperty Name="URUNACIKLAMA" ColumnName="URUNACIKLAMA" />
+                <ScalarProperty Name="URUNDETAY" ColumnName="URUNDETAY" />
+                <ScalarProperty Name="URUNADI" ColumnName="URUNADI" />
+                <ScalarProperty Name="KATID" ColumnName="KATID" />
+                <ScalarProperty Name="URUNID" ColumnName="URUNID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="vw_UrunResimKatResim">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.vw_UrunResimKatResim">
+              <MappingFragment StoreEntitySet="vw_UrunResimKatResim">
+                <ScalarProperty Name="KATLOGO" ColumnName="KATLOGO" />
+                <ScalarProperty Name="KATADI" ColumnName="KATADI" />
+                <ScalarProperty Name="KATURL" ColumnName="KATURL" />
+                <ScalarProperty Name="RESIM" ColumnName="RESIM" />
+                <ScalarProperty Name="URUNANMA" ColumnName="URUNANMA" />
+                <ScalarProperty Name="URUNOLCU" ColumnName="URUNOLCU" />
+                <ScalarProperty Name="URUNURL" ColumnName="URUNURL" />
+                <ScalarProperty Name="URUNDIL" ColumnName="URUNDIL" />
+                <ScalarProperty Name="URUNDURUM" ColumnName="URUNDURUM" />
+                <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+                <ScalarProperty Name="URUNVITRIN" ColumnName="URUNVITRIN" />
+                <ScalarProperty Name="URUNSIRA" ColumnName="URUNSIRA" />
+                <ScalarProperty Name="URUNKEY" ColumnName="URUNKEY" />
+                <ScalarProperty Name="URUNDESS" ColumnName="URUNDESS" />
+                <ScalarProperty Name="URUNTITLE" ColumnName="URUNTITLE" />
+                <ScalarProperty Name="URUNACIKLAMA" ColumnName="URUNACIKLAMA" />
+                <ScalarProperty Name="URUNDETAY" ColumnName="URUNDETAY" />
+                <ScalarProperty Name="URUNADI" ColumnName="URUNADI" />
+                <ScalarProperty Name="KATID" ColumnName="KATID" />
+                <ScalarProperty Name="URUNID" ColumnName="URUNID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LISANSLAMALARs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.LISANSLAMALAR">
+              <MappingFragment StoreEntitySet="LISANSLAMALAR">
+                <ScalarProperty Name="FIRKAYITTARIHI" ColumnName="FIRKAYITTARIHI" />
+                <ScalarProperty Name="FIRAKTIF" ColumnName="FIRAKTIF" />
+                <ScalarProperty Name="FIRDEMOMU" ColumnName="FIRDEMOMU" />
+                <ScalarProperty Name="FIRHDDSERIALNO" ColumnName="FIRHDDSERIALNO" />
+                <ScalarProperty Name="FIRCPUSERIALNO" ColumnName="FIRCPUSERIALNO" />
+                <ScalarProperty Name="FIRBOARDSERIALNO" ColumnName="FIRBOARDSERIALNO" />
+                <ScalarProperty Name="FIRGUNCELLEMESIKLIGI" ColumnName="FIRGUNCELLEMESIKLIGI" />
+                <ScalarProperty Name="FIRLISANSBITTARIH" ColumnName="FIRLISANSBITTARIH" />
+                <ScalarProperty Name="FIRLISANSBASTARIH" ColumnName="FIRLISANSBASTARIH" />
+                <ScalarProperty Name="FIRKULLANICISAYISI" ColumnName="FIRKULLANICISAYISI" />
+                <ScalarProperty Name="FIRLISANSKEY" ColumnName="FIRLISANSKEY" />
+                <ScalarProperty Name="FIRVERGINO" ColumnName="FIRVERGINO" />
+                <ScalarProperty Name="FIRVERGIDAIRESI" ColumnName="FIRVERGIDAIRESI" />
+                <ScalarProperty Name="FIRADRES" ColumnName="FIRADRES" />
+                <ScalarProperty Name="FIRILCE" ColumnName="FIRILCE" />
+                <ScalarProperty Name="FIRIL" ColumnName="FIRIL" />
+                <ScalarProperty Name="FIRFIRMAADI" ColumnName="FIRFIRMAADI" />
+                <ScalarProperty Name="FIRGSMNO" ColumnName="FIRGSMNO" />
+                <ScalarProperty Name="FIREMAIL" ColumnName="FIREMAIL" />
+                <ScalarProperty Name="FIRDOGUMTARIHI" ColumnName="FIRDOGUMTARIHI" />
+                <ScalarProperty Name="FIRADSOYAD" ColumnName="FIRADSOYAD" />
+                <ScalarProperty Name="FIRID" ColumnName="FIRID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="REKLAMs">
+            <EntityTypeMapping TypeName="InPlusYonetimModel.REKLAM">
+              <MappingFragment StoreEntitySet="REKLAM">
+                <ScalarProperty Name="REKLINK" ColumnName="REKLINK" />
+                <ScalarProperty Name="REKAKTIF" ColumnName="REKAKTIF" />
+                <ScalarProperty Name="REKGUID" ColumnName="REKGUID" />
+                <ScalarProperty Name="REKTIK" ColumnName="REKTIK" />
+                <ScalarProperty Name="REKHIT" ColumnName="REKHIT" />
+                <ScalarProperty Name="REKKODU" ColumnName="REKKODU" />
+                <ScalarProperty Name="REKYOLU" ColumnName="REKYOLU" />
+                <ScalarProperty Name="REKTIPI" ColumnName="REKTIPI" />
+                <ScalarProperty Name="REKADI" ColumnName="REKADI" />
+                <ScalarProperty Name="REKID" ColumnName="REKID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="YonetimModel" ZoomLevel="75">
+        <EntityTypeShape EntityType="InPlusYonetimModel.REZERVASYON" Width="1.5" PointX="12.375" PointY="12.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ADMIN" Width="1.5" PointX="0.75" PointY="0.75" Height="2.1725878906250102" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ALBUM" Width="1.5" PointX="2.75" PointY="0.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ALBUMILISKI" Width="1.5" PointX="4.75" PointY="0.75" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ALBUMRESIM" Width="1.5" PointX="0.75" PointY="4.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ANKET" Width="1.5" PointX="2.75" PointY="4.75" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ANKETCEVAP" Width="1.5" PointX="4.75" PointY="4.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.AYAR" Width="1.5" PointX="6.75" PointY="0.75" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.DIL" Width="1.5" PointX="6.75" PointY="5.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.DILKEY" Width="1.5" PointX="8.75" PointY="0.75" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.DILTITLE" Width="1.5" PointX="0.75" PointY="8.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.DOSYAUPLOAD" Width="1.5" PointX="2.75" PointY="8.75" Height="1.9802864583333246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.EBULTEN" Width="1.5" PointX="8.75" PointY="3.75" Height="2.1725878906249818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.FORM" Width="1.5" PointX="4.75" PointY="8.75" Height="4.6725065104166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.HABERMAKALE" Width="1.5" PointX="8.75" PointY="6.75" Height="4.2879036458333246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.HABERRESIM" Width="1.5" PointX="10.75" PointY="0.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ICERIK" Width="1.5" PointX="10.75" PointY="4.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ICERIKRESIM" Width="1.5" PointX="0.75" PointY="11.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.IK" Width="1.5" PointX="12.75" PointY="0.75" Height="2.7494921874999818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.IKFORMLAR" Width="1.5" PointX="12.75" PointY="4.75" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.ILETISIM" Width="1.5" PointX="6.75" PointY="12.75" Height="4.8648079427083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.KATEGORI" Width="1.5" PointX="8.75" PointY="12.75" Height="3.9033007812499818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.SLIDER" Width="1.5" PointX="12.75" PointY="8.75" Height="3.1340950520833246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.SLOGAN" Width="1.5" PointX="14.75" PointY="0.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.TBL_YONLENDIRME" Width="1.5" PointX="2.75" PointY="14.75" Height="1.5956835937499818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.URUN" Width="1.5" PointX="14.75" PointY="4.75" Height="4.6725065104166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.URUNDOSYA" Width="1.5" PointX="14.75" PointY="10.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.URUNOZELLIK" Width="1.5" PointX="14.75" PointY="14.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.URUNOZELLIKILISKI" Width="1.5" PointX="16.75" PointY="0.75" Height="1.7879850260416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.URUNRESIM" Width="1.5" PointX="16.75" PointY="3.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.UYE" Width="1.5" PointX="16.75" PointY="7.75" Height="3.9033007812499818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.YORUM" Width="1.5" PointX="10.75" PointY="16.75" Height="3.7109993489583246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VM_MAKALEYORUMSAYISI" Width="1.5" PointX="16.75" PointY="12.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_HABERRESIM" Width="1.5" PointX="0.75" PointY="17.75" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_ICERIK" Width="1.5" PointX="2.75" PointY="17.75" Height="4.6725065104166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_IK" Width="1.5" PointX="16.75" PointY="17.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_MAKALE" Width="1.5" PointX="18.75" PointY="0.75" Height="3.9033007812499818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_Slogan" Width="1.5" PointX="4.75" PointY="18.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_URUNDOSYA" Width="1.5" PointX="18.75" PointY="5.75" Height="2.7494921874999818" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.VW_URUNRESIM" Width="1.5" PointX="6.75" PointY="18.75" Height="4.6725065104166674" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.vw_UrunResimKatResim" Width="1.5" PointX="18.75" PointY="9.75" Height="4.8648079427083246" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.LISANSLAMALAR" Width="1.5" PointX="0.2510284223831391" PointY="1.1508524572247885" />
+        <EntityTypeShape EntityType="InPlusYonetimModel.REKLAM" Width="1.5" PointX="10.632878343869409" PointY="1.2992618835062078" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

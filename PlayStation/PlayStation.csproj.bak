@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{37E1794D-C62A-40BC-896C-7D3C0C3E3EEB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PlayStation</RootNamespace>
+    <AssemblyName>PlayStation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mm.ICO</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v13.2.Win, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=4.1.0.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevexpressLocalizers.cs" />
+    <Compile Include="FrmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAbout.Designer.cs">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdditions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdditions.Designer.cs">
+      <DependentUpon>FrmAdditions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProducts.Designer.cs">
+      <DependentUpon>FrmAddProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalculateCancelNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalculateCancelNote.Designer.cs">
+      <DependentUpon>FrmCalculateCancelNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeMachine.Designer.cs">
+      <DependentUpon>FrmChangeMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangeTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangeTime.Designer.cs">
+      <DependentUpon>FrmChangeTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnection.Designer.cs">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeptList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeptList.Designer.cs">
+      <DependentUpon>FrmDeptList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLicence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicence.Designer.cs">
+      <DependentUpon>FrmLicence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoging.Designer.cs">
+      <DependentUpon>FrmLoging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMachineClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMachineClose.Designer.cs">
+      <DependentUpon>FrmMachineClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMachineOpen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMachineOpen.Designer.cs">
+      <DependentUpon>FrmMachineOpen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaster.Designer.cs">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNotes.Designer.cs">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpenTarrifs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpenTarrifs.Designer.cs">
+      <DependentUpon>FrmOpenTarrifs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegisterComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegisterComp.Designer.cs">
+      <DependentUpon>FrmRegisterComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportBetween.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportBetween.Designer.cs">
+      <DependentUpon>FrmReportBetween.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportDay.Designer.cs">
+      <DependentUpon>FrmReportDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSettings.Designer.cs">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTarrifs_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTarrifs_old.Designer.cs">
+      <DependentUpon>FrmTarrifs_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTest.Designer.cs">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransferSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferSelection.Designer.cs">
+      <DependentUpon>FrmTransferSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWait.Designer.cs">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="Process.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="FrmAbout.resx">
+      <DependentUpon>FrmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdditions.resx">
+      <DependentUpon>FrmAdditions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProducts.resx">
+      <DependentUpon>FrmAddProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalculateCancelNote.resx">
+      <DependentUpon>FrmCalculateCancelNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeMachine.resx">
+      <DependentUpon>FrmChangeMachine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangeTime.resx">
+      <DependentUpon>FrmChangeTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnection.resx">
+      <DependentUpon>FrmConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeptList.resx">
+      <DependentUpon>FrmDeptList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicence.resx">
+      <DependentUpon>FrmLicence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoging.resx">
+      <DependentUpon>FrmLoging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMachineClose.resx">
+      <DependentUpon>FrmMachineClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMachineOpen.resx">
+      <DependentUpon>FrmMachineOpen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaster.resx">
+      <DependentUpon>FrmMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNotes.resx">
+      <DependentUpon>FrmNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpenTarrifs.resx">
+      <DependentUpon>FrmOpenTarrifs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegisterComp.resx">
+      <DependentUpon>FrmRegisterComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportBetween.resx">
+      <DependentUpon>FrmReportBetween.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportDay.resx">
+      <DependentUpon>FrmReportDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTarrifs_old.resx">
+      <DependentUpon>FrmTarrifs_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTest.resx">
+      <DependentUpon>FrmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferSelection.resx">
+      <DependentUpon>FrmTransferSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWait.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps-icon31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarrifs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlayStation.Data\PlayStation.Data.csproj">
+      <Project>{2d08ca80-c38a-46ee-b8f0-1015fb26d2ab}</Project>
+      <Name>PlayStation.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayStation.Functions\PlayStation.Functions.csproj">
+      <Project>{03ad5433-544e-43b4-9050-f68581f6cac5}</Project>
+      <Name>PlayStation.Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayStation.Licence\PlayStation.Licence.csproj">
+      <Project>{03943f18-f2f9-4195-96d4-bec390582494}</Project>
+      <Name>PlayStation.Licence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlayStation.Model\PlayStation.Model.csproj">
+      <Project>{3374def1-85ea-40a2-9a72-c4bf9270b0fb}</Project>
+      <Name>PlayStation.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock-grey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ps-icon5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last-5minute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change-table1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculate-transfer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculate-transfer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\ring.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report-Between.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report-Day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report-Day1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\debt-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\licence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1393731726_82273.ico" />
+    <Content Include="mm.ICO" />
+    <None Include="Resources\Consoleplus-logo1.png" />
+    <None Include="Resources\Consoleplus-logo.png" />
+    <None Include="Resources\Untitled-1.png" />
+    <None Include="Resources\1393731726_82273.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
